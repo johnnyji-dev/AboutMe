@@ -263,5 +263,6 @@ body {
 .detailLine {
     border: 2px solid black;
     border-top: transparent;
-    border-left: transparent;
+    border-right: transparent;
+    margin-left: 50px;
 }
