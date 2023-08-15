@@ -1,26 +1,32 @@
 html {
-    border: 5px solid red;
+    /* border: 5px solid red; */
+    border-color: transparent;
     margin: 5px;
     padding: 5px;
     text-align: center;
 }
 
 body {
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
+    border-color: transparent;
     margin: 5px;
     padding: 5px;
     text-align: center;
 }
 
 .horizontal-align-content {
-    background-color: gray;
+    /* background-color: gray; */
+    border-color: transparent;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .vertical-align-content {
-    border: 5px solid purple;
+    /* border: 5px solid purple; */
+    border-color: transparent;
     margin: 5px;
     padding: 5px;
     display: flex;
@@ -29,13 +35,15 @@ body {
 }
 
 #subject {
-    border: 2px solid white;
-    width: fit-content;
+    /* border: 2px solid white; */
+    width: 100%;
     height: 100px;
+    color: black;
+    font-size: 3em;
 }
 
 .container {
-    border: 5px solid green;
+    border-color: transparent;
     margin: 0 auto;
     padding: 5px;
 
@@ -52,7 +60,7 @@ body {
 }
 
 .cube {
-    border: 5px solid Indigo;
+    border-color: transparent;
     margin: 5px;
     padding: 5px;
 
@@ -234,15 +242,15 @@ body {
 }
 
 .line {
-    border: 2px solid ivory;
+    border: 2px solid gray;
     width: 100%;
     height: 1px;
-    background-color: ivory;
+    background-color: gray;
 }
 
 .containerDetail {
     width: 100%;
-    height: 300px;
+    height: fit-content;
 }
 
 .faceDetail {
@@ -264,38 +272,35 @@ body {
     border-right: transparent;
     margin-left: 50px;
 
-    background-color: gray;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
 }
 
 .title {
-    width: 50%;
+    width: 30%;
+    height: fit-content;
     display: flex;
     justify-content: flex-start;
 }
 
 .description {
-    width: 50%;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.typewriter .typingtarget{
+/* .typewriter .typingtarget {
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
-    /* Adjust as needed */
     animation:
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
     from {
         width: 0
@@ -306,7 +311,6 @@ body {
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
     from,
@@ -317,4 +321,5 @@ body {
     50% {
         border-color: black;
     }
-}
+} */
+
