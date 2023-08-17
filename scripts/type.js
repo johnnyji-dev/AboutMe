@@ -13,7 +13,7 @@ TxtType.prototype.tick = function () {
     var fullTxt = this.toRotate[i];
 
     if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        // this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
@@ -24,14 +24,13 @@ TxtType.prototype.tick = function () {
     var delta = 200 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
-
     if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
         this.isDeleting = true;
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 500000;
     }
 
     setTimeout(function () {
