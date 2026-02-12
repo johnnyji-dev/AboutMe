@@ -435,6 +435,68 @@ body {
     font-style: normal;
 }
 
+/* 업무 영역·기수별 요약 블록 */
+.work-summary {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--surface-border);
+}
+
+.work-summary-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--chain-node);
+    margin: 0 0 0.6rem 0;
+    letter-spacing: 0.02em;
+}
+
+.work-summary p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0 0 0.5rem 0;
+}
+
+.work-summary p:last-child {
+    margin-bottom: 0;
+}
+
+.work-by-period {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.work-by-period li {
+    margin-bottom: 0.5rem;
+}
+
+.work-by-period li strong {
+    color: var(--chain-color);
+}
+
+.work-recent-caption {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--chain-color);
+    margin: 0.75rem 0 0.35rem 0 !important;
+}
+
+.work-by-week {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    list-style: disc;
+}
+
+.work-by-week li {
+    margin-bottom: 0.25rem;
+}
+
 /* .typewriter .typingtarget {
     overflow: hidden;
     border-right: .15em solid orange;
