@@ -1,125 +1,70 @@
+/* ===== 상단 블록·체인 영역 변수 ===== */
+:root {
+    --block-bg: rgba(15, 23, 42, 0.9);
+    --block-border: rgba(34, 211, 238, 0.35);
+    --block-text: #e2e8f0;
+    --chain-color: #22d3ee;
+    --chain-node: #00ff88;
+    --chain-node-glow: rgba(0, 255, 136, 0.4);
+}
+
 html {
-    /* border: 5px solid red; */
     border-color: transparent;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 body {
-    /* border: 5px solid yellow; */
     border-color: transparent;
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 .horizontal-align-content {
-    /* background-color: gray; */
     border-color: transparent;
-    margin: 5px;
-    padding: 5px;
+    margin: 6px 0;
+    padding: 6px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .vertical-align-content {
-    /* border: 5px solid purple; */
     border-color: transparent;
-    margin: 5px;
-    padding: 5px;
+    margin: 6px 0;
+    padding: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #subject {
-    /* border: 2px solid white; */
     width: 100%;
-    height: 100px;
-    color: black;
-    font-size: 3em;
+    min-height: 80px;
+    color: var(--block-text);
+    font-size: clamp(1.5rem, 4vw, 2.75rem);
+    font-weight: 600;
 }
 
+/* ----- 블록(큐브) 영역 ----- */
 .container {
-    border-color: transparent;
-    margin: 0 auto;
-    padding: 5px;
-
-    width: 200px;
-    height: 200px;
-    perspective: 500px;
-    margin: 100px;
-    padding: 50px;
-    color: blue;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cube {
-    border-color: transparent;
-    margin: 5px;
-    padding: 5px;
-
     position: relative;
+    margin: 1rem;
+    padding: 1rem;
     width: 200px;
     height: 200px;
-    transform-style: preserve-3d;
-    /* transform: rotate3d(1, 1, 0, 45deg); */
-    /* transform: rotate3d(1, 0, 0, 0deg); */
-    /* transform: rotate3d(0, 1, 0, -20deg); */
-    transform: rotate3d(0, 1, 1, 30deg);
-}
-
-.face {
-    width: 200px;
-    height: 200px;
-    background: skyblue;
-    border: 2px solid black;
-    position: absolute;
-    opacity: 0.5;
+    perspective: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
-}
-
-.front {
-    transform: translateZ(100px);
-}
-
-.back {
-    transform: translateZ(-100px) rotateY(180deg);
-}
-
-.left {
-    transform: translateX(-100px) rotateY(-90deg);
-}
-
-.right {
-    transform: translateX(100px) rotateY(90deg);
-}
-
-.top {
-    transform: translateY(-100px) rotateX(-90deg);
-}
-
-.bottom {
-    transform: translateY(100px) rotateX(-90deg);
-}
-
-@keyframes turn {
-    from {
-        transform: rotate3d(0, 0, 0, 0);
-    }
-
-    to {
-        transform: rotate3d(1, 1, 0, 360deg);
-    }
+    flex-shrink: 0;
 }
 
 .cube {
@@ -127,125 +72,124 @@ body {
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: turn 5s linear infinite;
+    transform: rotate3d(0, 1, 1, 28deg);
+    animation: cube-turn 12s linear infinite;
+}
+
+@keyframes cube-turn {
+    from { transform: rotate3d(0, 1, 1, 28deg); }
+    to   { transform: rotate3d(0, 1, 1, 388deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .cube {
         animation: none;
-        transform: rotate3d(1, 1, 0, 45deg);
+        transform: rotate3d(0, 1, 1, 28deg);
     }
 }
 
-
-.chainL2R {
+.face {
     position: absolute;
-    left: -240px;
-    /* width: 355px; */
-    width: 385px;
-    height: 30px;
+    width: 200px;
+    height: 200px;
+    background: var(--block-bg);
+    border: 1px solid var(--block-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--block-text);
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    backface-visibility: hidden;
+    border-radius: 4px;
+}
+
+.front { transform: translateZ(100px); }
+.back  { transform: translateZ(-100px) rotateY(180deg); }
+.left  { transform: translateX(-100px) rotateY(-90deg); }
+.right { transform: translateX(100px) rotateY(90deg); }
+.top   { transform: translateY(-100px) rotateX(90deg); }
+.bottom { transform: translateY(100px) rotateX(-90deg); }
+
+/* ----- 체인 연결선 (블록 사이) ----- */
+.chainL2R,
+.chainR2L {
+    position: absolute;
+    height: 4px;
     background: transparent;
     overflow: hidden;
 }
 
-.chainL2R::before {
-    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-    position: absolute;
-    color: transparent;
-    font-size: 4em;
-    /* left: -355px; */
-    top: -60px;
-    text-decoration-style: wavy;
-    text-decoration-color: blue;
-    text-decoration-line: underline;
-    animation: waveAX 0.5s linear infinite;
+.chainL2R {
+    left: -240px;
+    width: 385px;
 }
 
 .chainR2L {
-    position: absolute;
-    /* left: -240px; */
     right: -230px;
-    /* width: 355px; */
     width: 395px;
-    height: 30px;
-    background: transparent;
-    overflow: hidden;
 }
 
+.chainL2R::before,
 .chainR2L::before {
-    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+    content: '';
     position: absolute;
-    color: transparent;
-    font-size: 4em;
-    /* left: -355px; */
-    top: -60px;
-    text-decoration-style: wavy;
-    text-decoration-color: blue;
-    text-decoration-line: underline;
-    animation: waveAX 0.5s linear infinite;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--chain-color), var(--chain-node));
+    border-radius: 1px;
+    opacity: 0.85;
 }
 
-@keyframes waveAX {
-    0% {
-        transform: translateX(-370px);
-    }
-
-    100% {
-        transform: translateX(-400px);
-    }
-}
+.chainL2R::before { left: 0; }
+.chainR2L::before { right: 0; left: auto; }
 
 .chainT2B {
-    border-radius: 10px;
     position: absolute;
     top: 150px;
-    width: 500px;
-    /* height: 355px; */
+    width: 4px;
     height: 455px;
     background: transparent;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .chainT2B::before {
-    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
+    content: '';
     position: absolute;
-    color: transparent;
-    font-size: 4em;
-    /* left: -355px; */
-    /* top: 10px; */
-    right: -140px;
-    text-decoration-style: wavy;
-    text-decoration-color: blue;
-    text-decoration-line: underline;
-    animation: waveAY 0.3s linear infinite;
-    rotate: 90deg;
-}
-
-@keyframes waveAY {
-    0% {
-        transform: translateX(40px);
-    }
-
-    100% {
-        transform: translateX(5px);
-    }
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--chain-color), var(--chain-node));
+    border-radius: 1px;
+    opacity: 0.85;
 }
 
 .point {
     position: relative;
     right: 10px;
     bottom: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    border-radius: 10px;
+    width: 14px;
+    height: 14px;
+    background: var(--chain-node);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--chain-node-glow);
+    z-index: 1;
+    flex-shrink: 0;
 }
 
 .line {
-    border: 2px solid gray;
-    width: 100%;
+    width: 88%;
+    max-width: 560px;
     height: 1px;
-    background-color: gray;
+    margin: 2rem auto;
+    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.4), rgba(34, 211, 238, 0.5), rgba(148, 163, 184, 0.4), transparent);
+    border: none;
 }
 
 .containerDetail {
@@ -288,6 +232,120 @@ body {
     width: fit-content;
     display: flex;
     justify-content: flex-start;
+}
+
+/* ----- Projects: GitHub repo 카드 ----- */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid var(--block-border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--block-text);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    min-width: 200px;
+    max-width: 320px;
+}
+
+.project-card:hover {
+    border-color: var(--chain-color);
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.2);
+}
+
+.project-name {
+    font-weight: 600;
+    color: var(--chain-node);
+    margin-bottom: 0.25rem;
+}
+
+.project-desc {
+    font-size: 0.875rem;
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.4;
+}
+
+.contact-link {
+    color: var(--chain-color);
+    text-decoration: none;
+}
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* ----- AboutMe: 소개·경력 ----- */
+.intro-text .description {
+    margin: 0.35rem 0;
+    line-height: 1.6;
+}
+
+.career-list {
+    width: 100%;
+}
+
+.career-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+.career-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.career-company {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--block-text);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+}
+
+.career-period {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--chain-color);
+    margin-left: 0.35rem;
+}
+
+.career-summary {
+    font-size: 0.9rem;
+    color: rgba(226, 232, 240, 0.85);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.5;
+}
+
+.career-tasks {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    color: rgba(226, 232, 240, 0.9);
+    line-height: 1.55;
+}
+
+.career-tasks li {
+    margin-bottom: 0.35rem;
+}
+
+.career-tasks li strong {
+    color: var(--chain-node);
+}
+
+.career-tasks em {
+    font-size: 0.85rem;
+    color: var(--chain-color);
+    font-style: normal;
 }
 
 /* .typewriter .typingtarget {
