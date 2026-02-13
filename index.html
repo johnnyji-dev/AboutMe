@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnny JI · Blockchain Developer</title>
+    <!-- 메모: 채울 내용 — 다국어 사용 시 언어 선택 링크 (참고: gwak2837 언어 전환) 한국어 / English 등 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,14 +14,17 @@
 
 <body id="myBody">
     <div class="page-wrap">
-    <!-- button onclick="alert('hello')">changeSize</button -->
-    <!-- <button onclick="changeDownSize();">changeDownSize</button>
-    <button onclick="changeUpSize();">changeUpSize</button>
-    <button onclick="changeTestSize();">changeTestSize</button> -->
+    <!-- Hero (참고: hunterdev.vercel.app) -->
+    <header class="hero">
+        <p class="hero-greeting">Hi, 👋</p>
+        <p class="hero-alias">(a.k.a. Johnny JI)</p>
+        <p class="hero-tagline">Blockchain Developer · CeFi/DeFi & Node Infrastructure</p>
+        <p class="hero-one-liner">Building reliable custody, wallet & node services.</p>
+    </header>
 
     <div class="horizontal-align-content">
         <div class="vertical-align-content">
-            <div class="vertical-align-content">
+            <div class="vertical-align-content hero-sub">
                 <div id="subject" class="typewrite" data-period="2000" data-type='[ "About JohnnyJI" ]'>
                 </div>
                 <div id="subject" class="typewrite" data-period="2000" data-type='[ "Blockchain Developer" ]'>
@@ -103,6 +107,13 @@
 
             <div class="line"></div>
 
+            <!-- 스크롤 콘텐츠: Hunter 스타일 (About. → Projects. → Skills. → Contacts. → Quote → Footer) -->
+            <main class="main-content">
+            <!-- About. (참고: hunter 섹션 라벨) -->
+            <section class="section-head">
+                <h2 class="section-title">About.</h2>
+                <div class="section-rule"></div>
+            </section>
             <div class="containerDetail">
                 <div class="vertical-align-content">
                     <div class="faceDetail typewrite" data-period="2000" data-type='["AboutMe"]'>
@@ -183,6 +194,11 @@
 
             <div class="line"></div>
 
+            <!-- Projects. -->
+            <section class="section-head">
+                <h2 class="section-title">Projects.</h2>
+                <div class="section-rule"></div>
+            </section>
             <div class="containerDetail">
                 <div class="vertical-align-content">
                     <div class="faceDetail typewrite" data-period="2000" data-type='["Projects"]'>
@@ -252,6 +268,11 @@
 
             <div class="line"></div>
 
+            <!-- Skills. -->
+            <section class="section-head">
+                <h2 class="section-title">Skills.</h2>
+                <div class="section-rule"></div>
+            </section>
             <div class="containerDetail">
                 <div class="vertical-align-content">
                     <div class="faceDetail typewrite" data-period="2000" data-type='["Skills"]'>
@@ -291,6 +312,23 @@
 
             <div class="line"></div>
 
+            <!-- Contacts. + Follow me (참고: hunter "Follow me on the internet") -->
+            <section class="section-head">
+                <h2 class="section-title">Contacts.</h2>
+                <div class="section-rule"></div>
+            </section>
+            <div class="follow-me">
+                <p class="follow-me-text">Follow me on the internet — or just say hi.</p>
+                <nav class="follow-me-links">
+                    <a href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer" class="follow-link" aria-label="GitHub">GitHub</a>
+                    <!-- 메모: 채울 내용 — Telegram 실제 링크 (예: https://t.me/your_username) -->
+                    <a href="#" class="follow-link" aria-label="Telegram">Telegram</a>
+                    <!-- 메모: 채울 내용 — LinkedIn 프로필 URL -->
+                    <a href="#" class="follow-link" aria-label="LinkedIn">LinkedIn</a>
+                    <!-- 메모: 채울 내용 — mailto: 이메일 또는 연락처 페이지 -->
+                    <a href="mailto:your@email.com" class="follow-link" aria-label="Email">Email</a>
+                </nav>
+            </div>
             <div class="containerDetail">
                 <div class="vertical-align-content">
                     <div class="faceDetail typewrite" data-period="2000" data-type='["Contacts"]'>
@@ -325,9 +363,23 @@
 
             <div class="line"></div>
 
+            <!-- Quote (참고: hunter "Consistently improving...") -->
+            <blockquote class="site-quote">
+                <!-- 메모: 채울 내용 — 본인 신조/좌우명 한 줄 (예: "매일 1%만 개선해도 지속 가능한 성장의 길이다.") -->
+                Consistently improving just 1% each day may seem small, but it is the most effective path to lasting progress.
+            </blockquote>
 
-
-
+            <!-- Footer (참고: hunter Built with, ©, Star on Github) -->
+            <footer class="site-footer">
+                <p class="footer-built">
+                    Built with <span class="footer-tech">HTML</span>, <span class="footer-tech">CSS</span>, <span class="footer-tech">JavaScript</span>.
+                    <!-- 메모: 채울 내용 — 원하면 Vercel/Netlify 등 호스팅 명시 -->
+                </p>
+                <p class="footer-copy">© Johnny JI 2025</p>
+                <!-- 메모: 채울 내용 — 이 포트폴리오 저장소가 있다면 GitHub 링크 -->
+                <a href="https://github.com/johnnyji-dev/AboutMe" target="_blank" rel="noopener noreferrer" class="footer-star">Star this project on Github</a>
+            </footer>
+            </main>
 
             <script src="scripts/main.js"></script>
             <script src="scripts/test.js"></script>

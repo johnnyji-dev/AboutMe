@@ -1,4 +1,4 @@
-/* ===== 디자인 토큰 ===== */
+/* ===== 배경 원복(다크) + Hunter 스타일 콘텐츠 구성 ===== */
 :root {
     --bg: #0c1222;
     --bg-elevated: #111827;
@@ -38,7 +38,7 @@ body {
     color: var(--block-text);
     font-family: var(--font-sans);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -46,6 +46,155 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 2.5rem 1.25rem 4rem;
+}
+
+/* ----- Hero (hunter: Howdy / a.k.a. / tagline) ----- */
+.hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0 1rem;
+}
+
+.hero-greeting {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    color: var(--block-text);
+    margin: 0 0 0.35rem 0;
+}
+
+.hero-alias {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0 0 0.75rem 0;
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    font-weight: 500;
+    color: var(--chain-color);
+    margin: 0 0 0.25rem 0;
+}
+
+.hero-one-liner {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.hero-sub {
+    margin-top: 0.5rem;
+}
+
+/* ----- Section label (hunter: About. --- 스크롤 콘텐츠 구성) ----- */
+.main-content {
+    text-align: left;
+}
+
+.section-head {
+    margin: 3rem 0 1.25rem;
+    text-align: left;
+}
+
+.section-head:first-of-type {
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--block-text);
+    margin: 0 0 0.5rem 0;
+}
+
+.section-rule {
+    width: 100%;
+    max-width: 60px;
+    height: 2px;
+    background: var(--chain-color);
+    border: none;
+}
+
+/* ----- Follow me (hunter: Let's be friend! / links) ----- */
+.follow-me {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.follow-me-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0 0 1rem 0;
+}
+
+.follow-me-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem 2rem;
+}
+
+.follow-link {
+    color: var(--chain-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.follow-link:hover {
+    text-decoration: underline;
+}
+
+.follow-link:focus-visible {
+    outline: 2px solid var(--chain-color);
+    outline-offset: 2px;
+}
+
+/* ----- Quote (hunter: Consistently improving...) ----- */
+.site-quote {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 2.5rem 0;
+    padding: 0 1.5rem;
+    line-height: 1.6;
+}
+
+/* ----- Footer (hunter: Built with / Star / ©) ----- */
+.site-footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-top: 1px solid var(--surface-border);
+    margin-top: 2rem;
+}
+
+.footer-built {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-tech {
+    color: var(--chain-node);
+    font-weight: 500;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-star {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--chain-color);
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.footer-star:hover {
+    text-decoration: underline;
 }
 
 .horizontal-align-content {
@@ -78,11 +227,9 @@ body {
 }
 
 #subject:nth-of-type(2) {
-    color: var(--chain-color);
-    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    color: var(--text-muted);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     margin-top: 0.25rem;
 }
 
@@ -130,11 +277,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--block-text);
     text-transform: lowercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     backface-visibility: hidden;
     border-radius: 4px;
 }
@@ -207,11 +354,10 @@ body {
     position: relative;
     right: 10px;
     bottom: 5px;
-    width: 14px;
-    height: 14px;
-    background: var(--chain-node);
+    width: 12px;
+    height: 12px;
+    background: var(--chain-color);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--chain-node-glow);
     z-index: 1;
     flex-shrink: 0;
 }
@@ -220,9 +366,8 @@ body {
     width: 100%;
     height: 1px;
     margin: 2.5rem 0;
-    background: linear-gradient(90deg, transparent, var(--surface-border), rgba(34, 211, 238, 0.25), var(--surface-border), transparent);
+    background: var(--surface-border);
     border: none;
-    opacity: 0.9;
 }
 
 .containerDetail {
@@ -230,8 +375,8 @@ body {
     padding: 2rem 1.75rem;
     background: var(--surface);
     border: 1px solid var(--surface-border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     margin-bottom: 0.5rem;
     text-align: left;
 }
@@ -242,19 +387,19 @@ body {
     justify-content: center;
     padding: 0.5rem 1rem;
     margin-bottom: 1.5rem;
-    background: var(--bg-elevated);
+    background: var(--block-bg);
     border: 1px solid var(--block-border);
     border-radius: var(--radius-sm);
     font-family: var(--font-mono);
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--chain-node);
+    color: var(--block-text);
     letter-spacing: 0.03em;
 }
 
 .detailLine {
     border: none;
-    border-left: 2px solid var(--chain-color);
+    border-left: 2px solid var(--surface-border);
     margin: 0 0 1rem 1.25rem;
     padding: 0.5rem 0 0.5rem 1.25rem;
     background: transparent;
@@ -276,7 +421,7 @@ body {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--chain-color);
+    color: var(--block-text);
     text-transform: lowercase;
     letter-spacing: 0.04em;
 }
@@ -285,7 +430,7 @@ body {
     flex: 1;
     min-width: 0;
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: var(--block-text);
     line-height: 1.6;
 }
 
@@ -312,20 +457,19 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 1.15rem;
-    background: var(--bg-elevated);
+    background: var(--surface);
     border: 1px solid var(--surface-border);
     border-radius: var(--radius-md);
     text-decoration: none;
     color: var(--block-text);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     min-width: 200px;
     max-width: 300px;
 }
 
 .project-card:hover {
-    border-color: var(--chain-color);
-    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.2), 0 8px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+    border-color: var(--block-border);
+    box-shadow: var(--shadow-md);
 }
 
 .project-card:focus-visible {
@@ -337,9 +481,8 @@ body {
     font-family: var(--font-mono);
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--chain-node);
+    color: var(--block-text);
     margin-bottom: 0.35rem;
-    letter-spacing: 0.02em;
 }
 
 .project-desc {
@@ -351,10 +494,8 @@ body {
 .contact-link {
     color: var(--chain-color);
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 .contact-link:hover {
-    color: var(--chain-node);
     text-decoration: underline;
 }
 .contact-link:focus-visible {
@@ -366,11 +507,11 @@ body {
 .intro-text .description {
     margin: 0.4rem 0;
     line-height: 1.65;
-    color: var(--text-muted);
+    color: var(--block-text);
 }
 
 .intro-text strong {
-    color: var(--chain-node);
+    color: var(--block-text);
 }
 
 .career-list {
@@ -395,15 +536,13 @@ body {
     color: var(--block-text);
     margin: 0 0 0.4rem 0;
     line-height: 1.35;
-    letter-spacing: -0.01em;
 }
 
 .career-period {
     font-size: 0.8rem;
     font-weight: 400;
-    color: var(--chain-color);
+    color: var(--text-muted);
     margin-left: 0.5rem;
-    opacity: 0.95;
 }
 
 .career-summary {
@@ -417,7 +556,7 @@ body {
     margin: 0.5rem 0 0 0;
     padding-left: 1.35rem;
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--block-text);
     line-height: 1.6;
 }
 
@@ -426,12 +565,12 @@ body {
 }
 
 .career-tasks li strong {
-    color: var(--chain-node);
+    color: var(--block-text);
 }
 
 .career-tasks em {
     font-size: 0.82rem;
-    color: var(--chain-color);
+    color: var(--text-muted);
     font-style: normal;
 }
 
@@ -445,9 +584,8 @@ body {
 .work-summary-title {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--chain-node);
+    color: var(--block-text);
     margin: 0 0 0.6rem 0;
-    letter-spacing: 0.02em;
 }
 
 .work-summary p {
@@ -474,13 +612,13 @@ body {
 }
 
 .work-by-period li strong {
-    color: var(--chain-color);
+    color: var(--block-text);
 }
 
 .work-recent-caption {
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--chain-color);
+    color: var(--text-muted);
     margin: 0.75rem 0 0.35rem 0 !important;
 }
 
@@ -540,7 +678,7 @@ article {
     position: relative;
     border-radius: var(--radius-md);
     box-shadow: none;
-    background: var(--bg-elevated);
+    background: var(--surface);
     border: 1px solid var(--surface-border);
     transform-origin: center;
     transition: all 0.3s ease;
@@ -612,11 +750,11 @@ article a .icon {
 
 article:has(:hover, :focus) {
     --img-scale: 1.05;
-    --title-color: var(--chain-node);
+    --title-color: var(--chain-color);
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     border-color: var(--block-border);
-    box-shadow: var(--shadow-md), 0 0 0 1px rgba(34, 211, 238, 0.15);
+    box-shadow: var(--shadow-md);
 }
 
 
