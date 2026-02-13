@@ -21,46 +21,69 @@
 
 ### careers
 
-#### 디앤에스에버 (트리플골드벤처스) · 2024.09 ~ 재직 중 (1년 6개월)
+#### 디앤에스에버 · 2024.09 ~ 재직 중 (1년 6개월)
 
-- **요약:** RWA(Real World Asset) 서비스 제공 예정. 자사 Token(ERC20) 론칭을 위한 DeFi 지갑 및 SOLANA SPL-Token 제어 기능 개발 참여.
-- **업무 요약**
-  - **시스템 개발 및 배포** — ETH 가스 최적화, admin 페이지, 토큰 상장 연동
-  - **블록체인 인프라 관리** — 70여 개 메인넷 관리, hardfork upgrade, version update, mainnet 연동, SOL 노드 안정화
+다수 블록체인 노드 운영과 입출금 시스템 개발·운영을 담당했습니다.
 
-**주요 업무 영역**
+- **노드 운영·인프라**
+  - 70여 개 메인넷 풀노드 설치·구성 및 일상 운영 (EVM, Cosmos SDK, Substrate, DAG 등 다양한 아키텍처)
+  - 하드포크·소프트포크 사전 분석 및 무중단 버전 업그레이드 수행
+  - 노드 동기화 상태 모니터링, 블록 높이 지연·피어 이상 감지 시 자동 알림 구성
+  - 장애 발생 시 원인 분석(로그·RPC 상태 점검)과 긴급 복구, 노드 재설치·데이터 스냅샷 복원
+  - 서버 디스크 용량 확보·확장, 노드 서버 간 이전·재배치 작업
+  - 공용(public) RPC 엔드포인트 확보·연동 및 엔드포인트 헬스체크·자동 전환 로직 운영
+  - 서버 보안 설정(방화벽, SSH 키 관리, 포트 제한) 및 접근 제어 관리
 
-- **Node Management** — 노드 정상/하드포크 업그레이드 20건 이상(SUI, COSMOS, OP, ARB, ETH, BSC 등), 장애 대응·복구 15건 이상(PRIZM, ALGO, TON, SUI, BASE, XLM 등), public-node 확보·연동(TON, TEZOS, SUI, SOL 등), 서버 용량 확보·노드 재설치·이전
-- **Development (Wallet Manager)** — EasyListing 개발·디버깅 및 배포, Platform Node Switching(엔드포인트 상태 점검·교체), Eth Average GasPrice 저장·평균 제공 API, wallet-metrics 연동(DOGE, FLR, BASE, KLAY, SUI 등), block-data-parsing 보정(SUI shared-object skip 등), 토큰 연동 10건 이상(contract 분석·배포)
-- **Wallet DB Control** — 입출금 보고서·통계 작성, Rescan 및 출금 오류 대응(AMB, MIB, XPX, ILC, BSC 등), account_balance·transaction_utxo 검증 및 UTXO 잔고 보정(EXCC 등)
-- **기타** — 토큰 연동·상폐 처리, Wallet-Admin Client 출금 오류 화면·기능 개선, 회의·운영 문서화·노드 운영 계획안 수립
-
-**기수별 업무 요약**
-
-- **25/04~06 (약 13주)** — 노드 정상/하드포크 업그레이드 30건+, 장애 대응 10건+(PRIZM, ALGO, IDNA, ARB, XYM, ZIL 등), EasyListing·wallet-metrics·출금 오류 대응, 입출금 보고 5회+
-- **24/12~25/03 (약 14주)** — 노드 업그레이드 20건+, 장애 대응 15건+(SUI, ALGO, TON, EOS, KASPA, ILC, XPX, BLAST 등), temp_origin DB 적용·Platform Node Switching 배포, 토큰 연동 10종+
-- **24/09~12 (약 16주)** — 노드 업그레이드 20건+, Eth Average GasPrice 기능 개발, Platform Node Switching 개발, 토큰 연동 10건+, public-node(SOL, MNT 등) 확보
-
-**최근 주차 예시**
-
-- W51 (12/15~) — DOT excluded 대응, prod-3 서버 정리 준비, 쏘카 청구
-- W50 (12/08~12) — 사무실 이사, STEEM 설치, TELOS 장애 대응, WAVES 동기화, ECOREAL 출금 실패 처리
-- W49 (12/01~05) — OP/SUI/BASE 노드 업그레이드·장애 대응, FLARE 업그레이드, ZYN 스왑, MATIC/ETH 수수료 이슈 대응
-- W46 (11/10~14) — ETH 하드포크, DOT·SOL·SUI 복구, APT address parsing 복구, BNB 입금 대응, CHZ endpoint 세팅
+- **입출금 시스템 개발·운영**
+  - 코인·토큰 입출금 파이프라인 개발 및 신규 체인·토큰 연동 (컨트랙트 분석·배포 포함)
+  - 블록 데이터 파싱 로직 개발·보정 및 트랜잭션 검증 처리
+  - 잔고 검증(account balance, UTXO) 및 불일치 시 보정·리스캔 대응
+  - 출금 오류 탐지·재처리 및 수수료 정책 개선 (가스비 평균 산출·최적 가스 전략 적용)
+  - 입출금 통계·보고서 생성 및 운영 지표 대시보드 관리
+  - 토큰 상장·상폐 프로세스 처리 (컨트랙트 검증, 지갑 연동, 잔고 이관)
+  - 운영 문서화 및 노드·입출금 운영 계획 수립
 
 #### 주식회사 크립탈론코리아 · 2024.04 ~ 2024.08 (5개월)
 
-- **SOLANA** — SPL Token minting, burn, freeze, thaw, metadata 설정·업데이트
-- **DeFi 지갑 개발** — ETHEREUM, BINANCE-SMART-CHAIN 지원, 지갑 생성·import(mnemonic, pk), COIN·ERC(BEP)20 전송, ERC(BEP)721/1155 민팅·전송
+DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
+
+- **DeFi 지갑 개발**
+  - EVM 계열(Ethereum, BNB Smart Chain) 멀티체인 지갑 아키텍처 설계·구현
+  - 지갑 생성·복구 기능 구현 (mnemonic 시드 기반 HD Wallet, Private Key import)
+  - 네이티브 코인 및 ERC-20 / BEP-20 토큰 전송 트랜잭션 구성·서명·브로드캐스트
+  - NFT(ERC-721 / ERC-1155, BEP-721 / BEP-1155) 민팅·전송 기능 개발
+  - 트랜잭션 상태 추적(pending → confirmed) 및 실패 시 재시도 로직 구현
+  - 가스비 추정·사용자 수수료 UI 연동 처리
+
+- **Solana SPL Token 제어**
+  - SPL Token minting, burn, freeze, thaw 기능 구현
+  - 토큰 메타데이터(이름, 심볼, URI) 설정·업데이트 처리
+  - Solana 클러스터(devnet/mainnet) 연결 구성 및 RPC 노드 관리
+  - 트랜잭션 시뮬레이션·수수료 산출 및 서명 워크플로 구현
 
 #### 주식회사엔아이에프 · 2022.04 ~ 2024.03 (2년)
 
-- **요약:** CeFi Custody 서비스 제공. flexible/fixed·staking 상품 입출금, 블록체인 노드 설치·유지보수 담당.
-- **주업무1** — flexible/fixed 상품(BTC, ETH, USDT, USDC, DAI 등) 입출금 개발·유지보수 *Java, MySQL*
-- **주업무2** — staking 상품 입출금 및 staking/unstaking/claim-reward 개발·유지보수 *Java, MySQL, NestJS*
-- **주업무3** — 암호화폐 상품용 블록체인 노드 설치·유지보수 *AWS EC2*
-- **보조업무** — 이벤트·frontend 요청 데이터 가공 및 API 개발
-- ASTR 스테이킹 V3 업그레이드, 수수료 부족 알림(Push/Email), MyCrypto·Hotwallet 수수료 절감, ICZ Airdrop, Near/astar.js PR, Full Node 모니터링·alert, BTC/ETH/BNB/ICX/BAND/NEAR/ASTR 입출금·스테이킹 모니터링 및 FullNode 유지보수
+메이저 자산 입출금 관리와 스테이킹 서비스 개발을 담당했습니다.
+
+- **입출금 시스템**
+  - BTC, ETH, USDT, USDC, DAI 등 주요 자산의 입출금 백엔드 개발·유지보수 (*Java, MySQL*)
+  - 입금 감지(블록 스캔·이벤트 리스닝), 출금 요청 검증·서명·브로드캐스트 파이프라인 운영
+  - 수수료 부족 시 자동 알림(Push/Email) 및 핫월렛 수수료 절감 로직 적용
+  - 입출금 모니터링 대시보드 구축 및 이상 거래 탐지·대응
+
+- **스테이킹 서비스**
+  - 다수 체인(BTC, ETH, BNB, ICX, BAND, NEAR, ASTR 등) 대상 staking / unstaking / claim-reward 트랜잭션 처리 로직 개발 (*Java, MySQL, NestJS*)
+  - 스테이킹 프로토콜 버전 업그레이드 대응 (밸리데이터 설정 변경, 보상 계산 로직 갱신)
+  - 스테이킹 상태·보상 모니터링 및 리포팅
+
+- **노드·인프라**
+  - 상품 운영에 필요한 블록체인 풀노드 설치·유지보수 (*AWS EC2*)
+  - 풀노드 동기화 상태 모니터링·알림(alert) 자동화 구성
+  - 노드 버전 업데이트 및 하드포크 대응, 디스크·메모리 리소스 관리
+
+- **기타**
+  - 이벤트·프론트엔드 요청에 따른 데이터 가공 및 API 개발
+  - 블록체인 SDK 오픈소스 기여 (Near, Astar.js PR)
 
 ### recent_interest
 
