@@ -1,390 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johnny JI · Blockchain Developer</title>
-    <!-- 메모: 채울 내용 — 다국어 사용 시 언어 선택 링크 (참고: gwak2837 언어 전환) 한국어 / English 등 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
-</head>
+    <meta
+      name="description"
+      content="Blockchain developer portfolio. Node infrastructure, custody/wallet, transfer & staking transaction systems."
+    />
+    <meta name="color-scheme" content="dark light" />
 
-<body id="myBody">
-    <div class="page-wrap">
-    <!-- Hero (참고: hunterdev.vercel.app) -->
-    <header class="hero">
-        <p class="hero-greeting">Hi, 👋</p>
-        <p class="hero-alias">(a.k.a. Johnny JI)</p>
-        <p class="hero-tagline">Blockchain Developer · CeFi/DeFi & Node Infrastructure</p>
-        <p class="hero-one-liner">Building reliable custody, wallet & node services.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-name">Johnny JI</span>
+          <span class="brand-role" data-i18n="brand.role">Blockchain Developer</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav-link" href="#about" data-i18n="nav.about">About</a>
+          <a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a>
+          <a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a>
+          <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="lang-toggle" id="langToggle" aria-label="Language toggle">
+            <span class="lang-pill" aria-hidden="true">KO</span>
+            <span class="lang-slash" aria-hidden="true">/</span>
+            <span class="lang-pill is-muted" aria-hidden="true">EN</span>
+          </button>
+          <a class="btn btn-ghost" href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
     </header>
 
-    <div class="horizontal-align-content">
-        <div class="vertical-align-content">
-            <div class="vertical-align-content hero-sub">
-                <div id="subject" class="typewrite" data-period="2000" data-type='[ "About JohnnyJI" ]'>
-                </div>
-                <div id="subject" class="typewrite" data-period="2000" data-type='[ "Blockchain Developer" ]'>
-                </div>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker" data-i18n="hero.kicker">Hi, 👋 (a.k.a. Johnny JI)</p>
+            <h1 class="hero-title" data-i18n="hero.title">Blockchain Developer</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              CeFi/DeFi · Node Infrastructure · Custody/Warehouse-grade reliability
+            </p>
+            <p class="hero-summary" data-i18n="hero.summary">
+              안정적인 노드 운영과 지갑·입출금·스테이킹 트랜잭션 시스템을 설계·개발합니다.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">프로젝트 보기</a>
+              <a class="btn btn-secondary" href="#contact" data-i18n="hero.ctaContact">연락하기</a>
             </div>
 
+            <ul class="hero-highlights" aria-label="highlights">
+              <li data-i18n="hero.h1">Multi-mainnet node operations & upgrades (hard/soft forks)</li>
+              <li data-i18n="hero.h2">Deposit/withdrawal pipelines, monitoring & incident response</li>
+              <li data-i18n="hero.h3">Wallet & staking transaction systems (EVM + Solana)</li>
+            </ul>
+          </div>
 
-            <div class="horizontal-align-content">
-                <div class="container aboutme">
-                    <div class="cube">
-                        <div class="face top">preparing...</div>
-                        <div class="face bottom">careers</div>
-                        <div class="face left">introduction</div>
-                        <div class="face right">preparing...</div>
-                        <div class="face front">AboutMe</div>
-                        <div class="face back">recent_interest</div>
-                    </div>
-                </div>
-                <!-- front => left => bottom => back => top => right -->
-                <div class="container">
-                    <div class="chainL2R"></div>
-                    <div class="point"></div>
-                    <div class="chainT2B"></div>
-                </div>
+          <aside class="hero-card" aria-label="quick facts">
+            <div class="hero-card-row">
+              <span class="label" data-i18n="facts.focus">Focus</span>
+              <span class="value" data-i18n="facts.focusValue">Node Infra · Wallet · Tx Systems</span>
+            </div>
+            <div class="hero-card-row">
+              <span class="label" data-i18n="facts.years">Experience</span>
+              <span class="value" data-i18n="facts.yearsValue">3y 11m+</span>
+            </div>
+            <div class="hero-card-row">
+              <span class="label" data-i18n="facts.location">Location</span>
+              <span class="value" data-i18n="facts.locationValue">Korea / Global (Remote-friendly)</span>
+            </div>
+            <div class="hero-card-divider" role="presentation"></div>
+            <p class="hero-card-note" data-i18n="facts.note">
+              This page supports Korean and English. Use the toggle to switch.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="about.title">About</h2>
+            <p class="section-desc" data-i18n="about.desc">저는 블록체인 개발자 Johnny 입니다.</p>
+          </div>
+
+          <div class="grid-two">
+            <div class="card">
+              <h3 class="card-title" data-i18n="about.profileTitle">Profile</h3>
+              <p class="card-text" data-i18n="about.profileP1">
+                총 3년 11개월 동안 CeFi Custody, DeFi 지갑, 스테이킹, 블록체인 노드·인프라 개발 및 유지보수를 담당했습니다.
+              </p>
+              <p class="card-text" data-i18n="about.profileP2">
+                안정적인 블록체인 서비스 구축과 풀스택 성장을 지향합니다.
+              </p>
             </div>
 
-            <div class="horizontal-align-content">
-                <div class="container">
-                    <div class="chainR2L"></div>
-                    <div class="point"></div>
-                    <div class="chainT2B"></div>
-                </div>
-                <div class="container projects">
-                    <div class="cube">
-                        <div class="face top">preparing...</div>
-                        <div class="face bottom">sports</div>
-                        <div class="face left">blockchains</div>
-                        <div class="face right">preparing...</div>
-                        <div class="face front">Projects</div>
-                        <div class="face back">preparing...</div>
-                    </div>
-                </div>
-                <!-- front => left => bottom => back => top => right -->
+            <div class="card">
+              <h3 class="card-title" data-i18n="about.interestTitle">Interests</h3>
+              <ul class="list">
+                <li data-i18n="about.interest1">BaaS(Blockchain as a Service)와 DeFi 인프라</li>
+                <li data-i18n="about.interest2">RWA(Real World Asset) 기반 서비스</li>
+                <li data-i18n="about.interest3">운영 안정성(관측성·자동복구·비용최적화)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="exp.title">Experience</h2>
+            <p class="section-desc" data-i18n="exp.desc">회사 내부 시스템명 없이, 역할과 경험 중심으로 정리했습니다.</p>
+          </div>
+
+          <div id="experienceList" class="stack"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+            <p class="section-desc" data-i18n="projects.desc">오픈소스와 개인 프로젝트를 정리했습니다.</p>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Project categories">
+            <button class="tab is-active" type="button" data-tab="blockchains" role="tab" aria-selected="true">
+              <span data-i18n="projects.tab1">Blockchains</span>
+            </button>
+            <button class="tab" type="button" data-tab="fullstack" role="tab" aria-selected="false">
+              <span data-i18n="projects.tab2">Fullstack & Other</span>
+            </button>
+          </div>
+
+          <div id="projectsGrid" class="grid-three" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+            <p class="section-desc" data-i18n="skills.desc">실무에서 자주 사용한 기술 스택입니다.</p>
+          </div>
+
+          <div id="skillsGrid" class="grid-three"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <p class="section-desc" data-i18n="contact.desc">연락은 GitHub 또는 이메일로 주시면 가장 빠릅니다.</p>
+          </div>
+
+          <div class="grid-two">
+            <div class="card">
+              <h3 class="card-title" data-i18n="contact.linksTitle">Links</h3>
+              <div class="link-list">
+                <a class="link-item" href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer">
+                  <span class="link-k">GitHub</span>
+                  <span class="link-v">github.com/johnnyji-dev</span>
+                </a>
+                <a class="link-item" href="mailto:your@email.com">
+                  <span class="link-k" data-i18n="contact.email">Email</span>
+                  <span class="link-v" data-i18n="contact.emailValue">your@email.com (update me)</span>
+                </a>
+                <a class="link-item" href="#" aria-disabled="true">
+                  <span class="link-k">LinkedIn</span>
+                  <span class="link-v" data-i18n="contact.linkedinValue">Add your profile URL</span>
+                </a>
+                <a class="link-item" href="#" aria-disabled="true">
+                  <span class="link-k">Telegram</span>
+                  <span class="link-v" data-i18n="contact.telegramValue">Add your link</span>
+                </a>
+              </div>
             </div>
 
-            <div class="horizontal-align-content">
-                <div class="container skills">
-                    <div class="cube">
-                        <div class="face top">preparing...</div>
-                        <div class="face bottom">backEnd</div>
-                        <div class="face left">web3</div>
-                        <div class="face right">preparing...</div>
-                        <div class="face front">Skills</div>
-                        <div class="face back">frontEnd</div>
-                    </div>
-                </div>
-                <!-- front => left => bottom => back => top => right -->
-                <div class="container">
-                    <div class="chainL2R"></div>
-                    <div class="point"></div>
-                    <div class="chainT2B"></div>
-                </div>
-            </div>
-
-            <div class="horizontal-align-content">
-                <div class="container">
-                </div>
-                <div class="container contacts">
-                    <div class="cube">
-                        <div class="face top">preparing...</div>
-                        <div class="face bottom">preparing</div>
-                        <div class="face left">email</div>
-                        <div class="face right">preparing...</div>
-                        <div class="face front">Contacts</div>
-                        <div class="face back">preparing...</div>
-                    </div>
-                </div>
-                <!-- front => left => bottom => back => top => right -->
-            </div>
-
-            <div class="line"></div>
-
-            <!-- 스크롤 콘텐츠: Hunter 스타일 (About. → Projects. → Skills. → Contacts. → Quote → Footer) -->
-            <main class="main-content">
-            <!-- About. (참고: hunter 섹션 라벨) -->
-            <section class="section-head">
-                <h2 class="section-title">About.</h2>
-                <div class="section-rule"></div>
-            </section>
-            <div class="containerDetail">
-                <div class="vertical-align-content">
-                    <div class="faceDetail typewrite" data-period="2000" data-type='["AboutMe"]'>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["introduction"]'>
-                        </div>
-                        <div class="vertical-align-content intro-text">
-                            <p class="description">Hi, I'm Johnny, a blockchain developer.</p>
-                            <p class="description">총 <strong>3년 11개월</strong> 동안 CeFi Custody, DeFi 지갑, 스테이킹, 블록체인 노드·인프라 개발 및 유지보수를 담당했습니다.</p>
-                            <p class="description">안정적인 블록체인 서비스 구축과 풀스택 성장을 지향합니다.</p>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["careers"]'>
-                        </div>
-                        <div class="career-list">
-                            <section class="career-item">
-                                <h3 class="career-company">디앤에스에버 (트리플골드벤처스) <span class="career-period">2024.09 ~ 재직 중 (1년 6개월)</span></h3>
-                                <p class="career-summary">RWA(Real World Asset) 서비스 제공 예정. 자사 Token(ERC20) 론칭을 위한 DeFi 지갑 및 SOLANA SPL-Token 제어 기능 개발 참여.</p>
-                                <ul class="career-tasks">
-                                    <li><strong>시스템 개발 및 배포</strong> — ETH 가스 최적화, admin 페이지, 토큰 상장 연동</li>
-                                    <li><strong>블록체인 인프라 관리</strong> — 70여 개 메인넷 관리, hardfork upgrade, version update, mainnet 연동, SOL 노드 안정화</li>
-                                </ul>
-                                <div class="work-summary">
-                                    <h4 class="work-summary-title">주요 업무 영역</h4>
-                                    <p><strong>Node Management</strong> — 노드 정상/하드포크 업그레이드 20건 이상(SUI, COSMOS, OP, ARB, ETH, BSC 등), 장애 대응·복구 15건 이상(PRIZM, ALGO, TON, SUI, BASE, XLM 등), public-node 확보·연동(TON, TEZOS, SUI, SOL 등), 서버 용량 확보·노드 재설치·이전</p>
-                                    <p><strong>Development (Wallet Manager)</strong> — EasyListing 개발·디버깅 및 배포, Platform Node Switching(엔드포인트 상태 점검·교체), Eth Average GasPrice 저장·평균 제공 API, wallet-metrics 연동(DOGE, FLR, BASE, KLAY, SUI 등), block-data-parsing 보정(SUI shared-object skip 등), 토큰 연동 10건 이상(contract 분석·배포)</p>
-                                    <p><strong>Wallet DB Control</strong> — 입출금 보고서·통계 작성, Rescan 및 출금 오류 대응(AMB, MIB, XPX, ILC, BSC 등), account_balance·transaction_utxo 검증 및 UTXO 잔고 보정(EXCC 등)</p>
-                                    <p><strong>기타</strong> — 토큰 연동·상폐 처리, Wallet-Admin Client 출금 오류 화면·기능 개선, 회의·운영 문서화·노드 운영 계획안 수립</p>
-                                </div>
-                                <div class="work-summary">
-                                    <h4 class="work-summary-title">기수별 업무 요약</h4>
-                                    <ul class="work-by-period">
-                                        <li><strong>25/04~06 (약 13주)</strong> — 노드 정상/하드포크 업그레이드 30건+, 장애 대응 10건+(PRIZM, ALGO, IDNA, ARB, XYM, ZIL 등), EasyListing·wallet-metrics·출금 오류 대응, 입출금 보고 5회+</li>
-                                        <li><strong>24/12~25/03 (약 14주)</strong> — 노드 업그레이드 20건+, 장애 대응 15건+(SUI, ALGO, TON, EOS, KASPA, ILC, XPX, BLAST 등), temp_origin DB 적용·Platform Node Switching 배포, 토큰 연동 10종+</li>
-                                        <li><strong>24/09~12 (약 16주)</strong> — 노드 업그레이드 20건+, Eth Average GasPrice 기능 개발, Platform Node Switching 개발, 토큰 연동 10건+, public-node(SOL, MNT 등) 확보</li>
-                                    </ul>
-                                    <p class="work-recent-caption">최근 주차 예시</p>
-                                    <ul class="work-by-week">
-                                        <li>W51 (12/15~) — DOT excluded 대응, prod-3 서버 정리 준비, 쏘카 청구</li>
-                                        <li>W50 (12/08~12) — 사무실 이사, STEEM 설치, TELOS 장애 대응, WAVES 동기화, ECOREAL 출금 실패 처리</li>
-                                        <li>W49 (12/01~05) — OP/SUI/BASE 노드 업그레이드·장애 대응, FLARE 업그레이드, ZYN 스왑, MATIC/ETH 수수료 이슈 대응</li>
-                                        <li>W46 (11/10~14) — ETH 하드포크, DOT·SOL·SUI 복구, APT address parsing 복구, BNB 입금 대응, CHZ endpoint 세팅</li>
-                                    </ul>
-                                </div>
-                            </section>
-                            <section class="career-item">
-                                <h3 class="career-company">주식회사 크립탈론코리아 <span class="career-period">2024.04 ~ 2024.08 (5개월)</span></h3>
-                                <ul class="career-tasks">
-                                    <li><strong>SOLANA</strong> — SPL Token minting, burn, freeze, thaw, metadata 설정·업데이트</li>
-                                    <li><strong>DeFi 지갑 개발</strong> — ETHEREUM, BINANCE-SMART-CHAIN 지원, 지갑 생성·import(mnemonic, pk), COIN·ERC(BEP)20 전송, ERC(BEP)721/1155 민팅·전송</li>
-                                </ul>
-                            </section>
-                            <section class="career-item">
-                                <h3 class="career-company">주식회사엔아이에프 <span class="career-period">2022.04 ~ 2024.03 (2년)</span></h3>
-                                <p class="career-summary">CeFi Custody 서비스 제공. flexible/fixed·staking 상품 입출금, 블록체인 노드 설치·유지보수 담당.</p>
-                                <ul class="career-tasks">
-                                    <li><strong>주업무1</strong> — flexible/fixed 상품(BTC, ETH, USDT, USDC, DAI 등) 입출금 개발·유지보수 <em>Java, MySQL</em></li>
-                                    <li><strong>주업무2</strong> — staking 상품 입출금 및 staking/unstaking/claim-reward 개발·유지보수 <em>Java, MySQL, NestJS</em></li>
-                                    <li><strong>주업무3</strong> — 암호화폐 상품용 블록체인 노드 설치·유지보수 <em>AWS EC2</em></li>
-                                    <li><strong>보조업무</strong> — 이벤트·frontend 요청 데이터 가공 및 API 개발</li>
-                                    <li>ASTR 스테이킹 V3 업그레이드, 수수료 부족 알림(Push/Email), MyCrypto·Hotwallet 수수료 절감, ICZ Airdrop, Near/astar.js PR, Full Node 모니터링·alert, BTC/ETH/BNB/ICX/BAND/NEAR/ASTR 입출금·스테이킹 모니터링 및 FullNode 유지보수</li>
-                                </ul>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["recent_interest"]'>
-                        </div>
-                        <div class="vertical-align-content">
-                            <p class="description">BaaS(Blockchain as a Service), RWA(Real World Asset) 서비스 및 DeFi 인프라에 관심이 있습니다.</p>
-                            <p class="description">다양한 메인넷 노드 운영·연동과 지갑·스테이킹 기능 개발 경험을 바탕으로 확장 가능한 블록체인 서비스를 만들고자 합니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <!-- Projects. -->
-            <section class="section-head">
-                <h2 class="section-title">Projects.</h2>
-                <div class="section-rule"></div>
-            </section>
-            <div class="containerDetail">
-                <div class="vertical-align-content">
-                    <div class="faceDetail typewrite" data-period="2000" data-type='["Projects"]'>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["blockchains"]'>
-                        </div>
-                        <div class="project-list">
-                            <a href="https://github.com/johnnyji-dev/blockchain-node-guides" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">blockchain-node-guides</span>
-                                <span class="project-desc">블록체인 노드 구축/운영 가이드 (Shell)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/blockchainScPrjs" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">blockchainScPrjs</span>
-                                <span class="project-desc">블록체인 스마트 컨트랙트·스크립트 프로젝트</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/crypto-wallet-core" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">crypto-wallet-core</span>
-                                <span class="project-desc">암호화폐 지갑 코어</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/blockchain-api-server" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">blockchain-api-server</span>
-                                <span class="project-desc">블록체인 API 서버 (TypeScript)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/polkadotUnit" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">polkadotUnit</span>
-                                <span class="project-desc">Polkadot 관련 유닛·테스트 (TypeScript)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/modudao-web" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">modudao-web</span>
-                                <span class="project-desc">ModuDAO 웹 (JavaScript)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/blockchain_devOps" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">blockchain_devOps</span>
-                                <span class="project-desc">블록체인 DevOps</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["fullstack &amp; other"]'>
-                        </div>
-                        <div class="project-list">
-                            <a href="https://github.com/johnnyji-dev/fullstack-starter" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">fullstack-starter</span>
-                                <span class="project-desc">풀스택 모노레포 템플릿 (Next.js, FastAPI, Flutter, Terraform, mise)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/react_pwa" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">react_pwa</span>
-                                <span class="project-desc">React PWA</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/CSLangQuestProjects" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">CSLangQuestProjects</span>
-                                <span class="project-desc">CS·언어 퀘스트 프로젝트</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/kisa-dapp-basic" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">kisa-dapp-basic</span>
-                                <span class="project-desc">KISA DApp 기초 (TypeScript fork)</span>
-                            </a>
-                            <a href="https://github.com/johnnyji-dev/book-examples" class="project-card" target="_blank" rel="noopener noreferrer">
-                                <span class="project-name">book-examples</span>
-                                <span class="project-desc">SSI-Korea 책 예제 (Go, Apache 2.0)</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <!-- Skills. -->
-            <section class="section-head">
-                <h2 class="section-title">Skills.</h2>
-                <div class="section-rule"></div>
-            </section>
-            <div class="containerDetail">
-                <div class="vertical-align-content">
-                    <div class="faceDetail typewrite" data-period="2000" data-type='["Skills"]'>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["web3"]'>
-                        </div>
-                        <div class="description">
-                            <img src="https://img.shields.io/badge/web3js-f16822?style=flat-square&logo=Web3.js&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/icon_sdk_js-31b8bb?style=flat-square&logo=ICON&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/web3js_bnb-f0b90b?style=flat-square&logo=Binance&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/tmp_bandchain.js-f12c18?style=flat-square&logo=BandLab&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/tmp_near_sdk_js-5e6ad2?style=flat-square&logo=Linear&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/polkadot_js-e6007a?style=flat-square&logo=Polkadot&logoColor=white"/>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["backend"]'>
-                        </div>
-                        <div class="description typewrite">
-                            <img src="https://img.shields.io/badge/NestJS-e0234e?style=flat-square&logo=NestJS&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["frontend"]'>
-                        </div>
-                        <div class="description typewrite">
-                            <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/>
-                            <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="line"></div>
-
-            <!-- Contacts. + Follow me (참고: hunter "Follow me on the internet") -->
-            <section class="section-head">
-                <h2 class="section-title">Contacts.</h2>
-                <div class="section-rule"></div>
-            </section>
-            <div class="follow-me">
-                <p class="follow-me-text">Follow me on the internet — or just say hi.</p>
-                <nav class="follow-me-links">
-                    <a href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer" class="follow-link" aria-label="GitHub">GitHub</a>
-                    <!-- 메모: 채울 내용 — Telegram 실제 링크 (예: https://t.me/your_username) -->
-                    <a href="#" class="follow-link" aria-label="Telegram">Telegram</a>
-                    <!-- 메모: 채울 내용 — LinkedIn 프로필 URL -->
-                    <a href="#" class="follow-link" aria-label="LinkedIn">LinkedIn</a>
-                    <!-- 메모: 채울 내용 — mailto: 이메일 또는 연락처 페이지 -->
-                    <a href="mailto:your@email.com" class="follow-link" aria-label="Email">Email</a>
-                </nav>
-            </div>
-            <div class="containerDetail">
-                <div class="vertical-align-content">
-                    <div class="faceDetail typewrite" data-period="2000" data-type='["Contacts"]'>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["github"]'>
-                        </div>
-                        <div class="description">
-                            <a href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/johnnyji-dev</a>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["email"]'>
-                        </div>
-                        <div class="description typewrite" data-period="2000" data-type='["email-contents"]'>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["linkedin"]'>
-                        </div>
-                        <div class="description typewrite" data-period="2000" data-type='["linkedin-contents"]'>
-                        </div>
-                    </div>
-                    <div class="detailLine">
-                        <div class="title typewrite" data-period="2000" data-type='["telegram"]'>
-                        </div>
-                        <div class="description typewrite" data-period="2000" data-type='["telegram-contents"]'>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <!-- Quote (참고: hunter "Consistently improving...") -->
-            <blockquote class="site-quote">
-                <!-- 메모: 채울 내용 — 본인 신조/좌우명 한 줄 (예: "매일 1%만 개선해도 지속 가능한 성장의 길이다.") -->
+            <div class="card">
+              <h3 class="card-title" data-i18n="contact.noteTitle">Note</h3>
+              <p class="card-text" data-i18n="contact.noteP1">
+                국내/글로벌 채용 모두 고려해 한국어와 영어 콘텐츠를 함께 제공합니다.
+              </p>
+              <p class="card-text" data-i18n="contact.noteP2">
+                링크(이메일/LinkedIn/Telegram)는 필요에 맞게 교체해주세요.
+              </p>
+              <blockquote class="quote" data-i18n="quote.text">
                 Consistently improving just 1% each day may seem small, but it is the most effective path to lasting progress.
-            </blockquote>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <!-- Footer (참고: hunter Built with, ©, Star on Github) -->
-            <footer class="site-footer">
-                <p class="footer-built">
-                    Built with <span class="footer-tech">HTML</span>, <span class="footer-tech">CSS</span>, <span class="footer-tech">JavaScript</span>.
-                    <!-- 메모: 채울 내용 — 원하면 Vercel/Netlify 등 호스팅 명시 -->
-                </p>
-                <p class="footer-copy">© Johnny JI 2025</p>
-                <!-- 메모: 채울 내용 — 이 포트폴리오 저장소가 있다면 GitHub 링크 -->
-                <a href="https://github.com/johnnyji-dev/AboutMe" target="_blank" rel="noopener noreferrer" class="footer-star">Star this project on Github</a>
-            </footer>
-            </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-muted">
+          <span data-i18n="footer.built">Built with</span>
+          <span class="footer-tech">HTML</span>, <span class="footer-tech">CSS</span>, <span class="footer-tech">JavaScript</span>.
+        </p>
+        <p class="footer-muted">© <span id="year"></span> Johnny JI</p>
+        <a class="footer-link" href="https://github.com/johnnyji-dev/AboutMe" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="footer.star">Star this project on GitHub</span>
+        </a>
+      </div>
+    </footer>
 
-            <script src="scripts/main.js"></script>
-            <script src="scripts/test.js"></script>
-            <script src="scripts/type.js"></script>
-    </div>
-</body>
+    <noscript>
+      <div class="noscript">
+        This site needs JavaScript enabled for language toggle and dynamic sections.
+      </div>
+    </noscript>
 
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
+
