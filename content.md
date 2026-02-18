@@ -141,14 +141,14 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
 - [GitHub](https://github.com/johnnyji-dev)
 - Telegram *(링크 추가 예정)*
 - LinkedIn *(링크 추가 예정)*
-- Email *(mailto 추가 예정)*
+- [Email](mailto:johnnyji.dev@gmail.com)
 
 ### 상세
 
 - **github:** [github.com/johnnyji-dev](https://github.com/johnnyji-dev)
-- **email:** *(타이핑 효과용 — 실제 문구 추가)*
-- **linkedin:** *(타이핑 효과용 — URL 추가)*
-- **telegram:** *(타이핑 효과용 — URL 추가)*
+- **email:** johnnyji.dev@gmail.com
+- **linkedin:** *(URL 추가 예정)*
+- **telegram:** [@JohnnyBlck](https://t.me/JohnnyBlck)
 
 ---
 
