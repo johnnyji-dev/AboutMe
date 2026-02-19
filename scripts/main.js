@@ -138,6 +138,51 @@ const DATA = {
             },
           ],
         },
+        {
+          company: "유니맥스",
+          period: "2017.10 ~ 2019.12 (2년 3개월)",
+          lede: "개발팀 연구원. 방산장비 및 시험 소프트웨어 개발.",
+          areas: [
+            {
+              title: "방산·시험 SW",
+              bullets: [
+                "방산장비 개발 — 장비 제어·시험 소프트웨어 개발 및 연동",
+                "Test Application 개발 — 시험 자동화 및 데이터 수집·리포팅",
+                "SW 신뢰성 시험 — 소프트웨어 품질·신뢰성 시험 수행",
+              ],
+            },
+          ],
+        },
+        {
+          company: "GYROZEN",
+          period: "2015.09 ~ 2017.02 (1년 6개월)",
+          lede: "개발팀 사원. 생명과학 장비 및 외주 개발 관리.",
+          areas: [
+            {
+              title: "장비 개발·외주 관리",
+              bullets: [
+                "원심분리기 등 생명과학 장비 개발 — 장비 제어 SW 및 펌웨어 연동",
+                "외주 하드웨어 관리 — 외주 개발 하드웨어 스펙·납기 관리",
+                "외주 소프트웨어 관리 — 외주 개발 소프트웨어 검수·통합",
+              ],
+            },
+          ],
+        },
+        {
+          company: "(주)평생동반자 우리",
+          period: "2015.01 ~ 2015.08 (8개월)",
+          lede: "기술부 사원. 수입 안과 장비 유지보수.",
+          areas: [
+            {
+              title: "장비 유지보수·지원",
+              bullets: [
+                "수입 안과 장비 유지보수 — 장비 점검·고장 대응 및 부품 교체",
+                "하드웨어 점검, troubleshooting — 현장 점검 및 장애 원인 분석",
+                "소프트웨어 업데이트 및 해외본사 메일링 — 펌웨어/SW 업데이트, 해외 본사와 기술 커뮤니케이션",
+              ],
+            },
+          ],
+        },
       ],
     },
     projects: {
@@ -333,6 +378,51 @@ const DATA = {
             {
               title: "Other",
               bullets: ["Built APIs for internal requests and data processing", "Open-source contributions to blockchain SDKs (Near, Astar.js PRs)"],
+            },
+          ],
+        },
+        {
+          company: "Unimax",
+          period: "Oct 2017 — Dec 2019",
+          lede: "R&D Engineer, Development Team. Defense equipment and test software development.",
+          areas: [
+            {
+              title: "Defense & Test SW",
+              bullets: [
+                "Defense equipment development — control and test software development and integration",
+                "Test application development — test automation, data collection, and reporting",
+                "Software reliability testing — quality and reliability testing",
+              ],
+            },
+          ],
+        },
+        {
+          company: "GYROZEN",
+          period: "Sep 2015 — Feb 2017",
+          lede: "Developer, Development Team. Life-science equipment and outsourced HW/SW management.",
+          areas: [
+            {
+              title: "Equipment & Outsourcing",
+              bullets: [
+                "Centrifuge and life-science equipment development — control SW and firmware integration",
+                "Outsourced hardware management — specs and delivery management",
+                "Outsourced software management — acceptance testing and integration",
+              ],
+            },
+          ],
+        },
+        {
+          company: "Amaris (Lifetime Partner)",
+          period: "Jan 2015 — Aug 2015",
+          lede: "Technical staff. Maintenance of imported ophthalmic equipment.",
+          areas: [
+            {
+              title: "Equipment Maintenance & Support",
+              bullets: [
+                "Maintenance of imported ophthalmic equipment — inspection, troubleshooting, parts replacement",
+                "Hardware inspection and troubleshooting — on-site checks and root-cause analysis",
+                "Software updates and overseas HQ communication — firmware/SW updates, technical correspondence",
+              ],
             },
           ],
         },
