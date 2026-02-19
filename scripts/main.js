@@ -187,7 +187,7 @@ const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "GitHub 공개 저장소 기준으로 정리했습니다.",
+      desc: "GitHub 프로필 기준으로 정리했습니다.",
       tab1: "Blockchains",
       tab2: "Other",
       categories: {
@@ -204,6 +204,12 @@ const DATA = {
             href: "https://github.com/johnnyji-dev/crypto-wallet-core",
             tag: "TypeScript",
           },
+          {
+            name: "blockchain-tech",
+            desc: "블록체인 기술 예제/실습 (JavaScript)",
+            href: "https://github.com/johnnyji-dev/blockchain-tech",
+            tag: "JavaScript",
+          },
         ],
         fullstack: [
           {
@@ -211,6 +217,12 @@ const DATA = {
             desc: "이 포트폴리오 웹사이트 (JavaScript)",
             href: "https://github.com/johnnyji-dev/AboutMe",
             tag: "JavaScript",
+          },
+          {
+            name: "sCtemplate",
+            desc: "템플릿 프로젝트 (HTML)",
+            href: "https://github.com/johnnyji-dev/sCtemplate",
+            tag: "HTML",
           },
           {
             name: "johnnyji-dev",
@@ -430,17 +442,49 @@ const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "Based on my public GitHub repositories.",
+      desc: "Based on my GitHub profile repositories.",
       tab1: "Blockchains",
       tab2: "Other",
       categories: {
         blockchains: [
-          { name: "blockchain-node-guides", desc: "Blockchain node setup & operations guides (Shell)", href: "https://github.com/johnnyji-dev/blockchain-node-guides", tag: "Shell" },
-          { name: "crypto-wallet-core", desc: "Crypto wallet core library (TypeScript)", href: "https://github.com/johnnyji-dev/crypto-wallet-core", tag: "TypeScript" },
+          {
+            name: "blockchain-node-guides",
+            desc: "Blockchain node setup & operations guides (Shell)",
+            href: "https://github.com/johnnyji-dev/blockchain-node-guides",
+            tag: "Shell",
+          },
+          {
+            name: "crypto-wallet-core",
+            desc: "Crypto wallet core library (TypeScript)",
+            href: "https://github.com/johnnyji-dev/crypto-wallet-core",
+            tag: "TypeScript",
+          },
+          {
+            name: "blockchain-tech",
+            desc: "Blockchain tech experiments/examples (JavaScript)",
+            href: "https://github.com/johnnyji-dev/blockchain-tech",
+            tag: "JavaScript",
+          },
         ],
         fullstack: [
-          { name: "AboutMe", desc: "This portfolio website (JavaScript)", href: "https://github.com/johnnyji-dev/AboutMe", tag: "JavaScript" },
-          { name: "johnnyji-dev", desc: "GitHub profile README", href: "https://github.com/johnnyji-dev/johnnyji-dev", tag: "Profile" },
+          {
+            name: "AboutMe",
+            desc: "This portfolio website (JavaScript)",
+            href: "https://github.com/johnnyji-dev/AboutMe",
+            tag: "JavaScript",
+          },
+          {
+            name: "sCtemplate",
+            desc: "Template project (HTML)",
+            href: "https://github.com/johnnyji-dev/sCtemplate",
+            tag: "HTML",
+          },
+          {
+            name: "johnnyji-dev",
+            desc: "GitHub profile README",
+            href: "https://github.com/johnnyji-dev/johnnyji-dev",
+            tag: "Profile",
+          },
         ],
       },
     },
