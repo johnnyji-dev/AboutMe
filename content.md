@@ -94,27 +94,14 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
 
 ## Projects.
 
-### blockchains
+[GitHub Repositories](https://github.com/johnnyji-dev?tab=repositories) 기준으로 정리했습니다.
 
 | 프로젝트 | 설명 | 링크 |
 |---------|------|------|
 | blockchain-node-guides | 블록체인 노드 구축/운영 가이드 (Shell) | [GitHub](https://github.com/johnnyji-dev/blockchain-node-guides) |
-| blockchainScPrjs | 블록체인 스마트 컨트랙트·스크립트 프로젝트 | [GitHub](https://github.com/johnnyji-dev/blockchainScPrjs) |
-| crypto-wallet-core | 암호화폐 지갑 코어 | [GitHub](https://github.com/johnnyji-dev/crypto-wallet-core) |
-| blockchain-api-server | 블록체인 API 서버 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/blockchain-api-server) |
-| polkadotUnit | Polkadot 관련 유닛·테스트 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/polkadotUnit) |
-| modudao-web | ModuDAO 웹 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/modudao-web) |
-| blockchain_devOps | 블록체인 DevOps | [GitHub](https://github.com/johnnyji-dev/blockchain_devOps) |
-
-### fullstack & other
-
-| 프로젝트 | 설명 | 링크 |
-|---------|------|------|
-| fullstack-starter | 풀스택 모노레포 템플릿 (Next.js, FastAPI, Flutter, Terraform, mise) | [GitHub](https://github.com/johnnyji-dev/fullstack-starter) |
-| react_pwa | React PWA | [GitHub](https://github.com/johnnyji-dev/react_pwa) |
-| CSLangQuestProjects | CS·언어 퀘스트 프로젝트 | [GitHub](https://github.com/johnnyji-dev/CSLangQuestProjects) |
-| kisa-dapp-basic | KISA DApp 기초 (TypeScript fork) | [GitHub](https://github.com/johnnyji-dev/kisa-dapp-basic) |
-| book-examples | SSI-Korea 책 예제 (Go, Apache 2.0) | [GitHub](https://github.com/johnnyji-dev/book-examples) |
+| crypto-wallet-core | 암호화폐 지갑 코어 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/crypto-wallet-core) |
+| AboutMe | 이 포트폴리오 웹사이트 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/AboutMe) |
+| johnnyji-dev | GitHub 프로필 README | [GitHub](https://github.com/johnnyji-dev/johnnyji-dev) |
 
 ---
 
