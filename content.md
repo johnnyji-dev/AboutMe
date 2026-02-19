@@ -85,6 +85,32 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
   - 이벤트·프론트엔드 요청에 따른 데이터 가공 및 API 개발
   - 블록체인 SDK 오픈소스 기여 (Near, Astar.js PR)
 
+#### 다른 직무 활동
+
+##### 2017.10 - 2019.12 / [유니맥스](http://www.unimax.co.kr/)
+
+부서: 개발팀 / 직위: 연구원
+
+- **방산장비 개발** — 장비 제어·시험 소프트웨어 개발 및 연동
+- **Test Application 개발** — 시험 자동화 및 데이터 수집·리포팅
+- **SW 신뢰성 시험** — 소프트웨어 품질·신뢰성 시험 수행
+
+##### 2015.09 - 2017.02 / [GYROZEN](https://gyrozen.com/)
+
+부서: 개발팀 / 직위: 사원
+
+- **원심분리기 등 생명과학 장비 개발** — 장비 제어 SW 및 펌웨어 연동
+- **외주 하드웨어 관리** — 외주 개발 하드웨어 스펙·납기 관리
+- **외주 소프트웨어 관리** — 외주 개발 소프트웨어 검수·통합
+
+##### 2015.01 - 2015.08 / [(주)평생동반자 우리](http://amaris.co.kr/xe/)
+
+부서: 기술부 / 직위: 사원
+
+- **수입 안과 장비 유지보수** — 장비 점검·고장 대응 및 부품 교체
+- **하드웨어 점검, troubleshooting** — 현장 점검 및 장애 원인 분석
+- **소프트웨어 업데이트 및 해외본사 메일링** — 펌웨어/SW 업데이트, 해외 본사와 기술 커뮤니케이션
+
 ### recent_interest
 
 - BaaS(Blockchain as a Service), RWA(Real World Asset) 서비스 및 DeFi 인프라에 관심이 있습니다.
@@ -94,27 +120,24 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
 
 ## Projects.
 
-### blockchains
+[GitHub Profile](https://github.com/johnnyji-dev) 기준으로 정리했습니다. **공개(Public) 저장소만** 표시합니다.
+
+### Blockchains
 
 | 프로젝트 | 설명 | 링크 |
 |---------|------|------|
 | blockchain-node-guides | 블록체인 노드 구축/운영 가이드 (Shell) | [GitHub](https://github.com/johnnyji-dev/blockchain-node-guides) |
-| blockchainScPrjs | 블록체인 스마트 컨트랙트·스크립트 프로젝트 | [GitHub](https://github.com/johnnyji-dev/blockchainScPrjs) |
-| crypto-wallet-core | 암호화폐 지갑 코어 | [GitHub](https://github.com/johnnyji-dev/crypto-wallet-core) |
-| blockchain-api-server | 블록체인 API 서버 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/blockchain-api-server) |
-| polkadotUnit | Polkadot 관련 유닛·테스트 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/polkadotUnit) |
-| modudao-web | ModuDAO 웹 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/modudao-web) |
-| blockchain_devOps | 블록체인 DevOps | [GitHub](https://github.com/johnnyji-dev/blockchain_devOps) |
+| crypto-wallet-core | 암호화폐 지갑 코어 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/crypto-wallet-core) |
+| blockchain-tech | 블록체인 기술 예제/실습 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/blockchain-tech) |
+| sCtemplate | 스마트 컨트랙트·블록체인 관련 템플릿 (HTML) | [GitHub](https://github.com/johnnyji-dev/sCtemplate) |
+| crypto-wiki | 암호·블록체인 위키/문서 | [GitHub](https://github.com/johnnyji-dev/crypto-wiki) |
 
-### fullstack & other
+### Other
 
 | 프로젝트 | 설명 | 링크 |
 |---------|------|------|
-| fullstack-starter | 풀스택 모노레포 템플릿 (Next.js, FastAPI, Flutter, Terraform, mise) | [GitHub](https://github.com/johnnyji-dev/fullstack-starter) |
-| react_pwa | React PWA | [GitHub](https://github.com/johnnyji-dev/react_pwa) |
-| CSLangQuestProjects | CS·언어 퀘스트 프로젝트 | [GitHub](https://github.com/johnnyji-dev/CSLangQuestProjects) |
-| kisa-dapp-basic | KISA DApp 기초 (TypeScript fork) | [GitHub](https://github.com/johnnyji-dev/kisa-dapp-basic) |
-| book-examples | SSI-Korea 책 예제 (Go, Apache 2.0) | [GitHub](https://github.com/johnnyji-dev/book-examples) |
+| AboutMe | 이 포트폴리오 웹사이트 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/AboutMe) |
+| johnnyji-dev | GitHub 프로필 README | [GitHub](https://github.com/johnnyji-dev/johnnyji-dev) |
 
 ---
 
@@ -141,14 +164,14 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
 - [GitHub](https://github.com/johnnyji-dev)
 - Telegram *(링크 추가 예정)*
 - LinkedIn *(링크 추가 예정)*
-- Email *(mailto 추가 예정)*
+- [Email](mailto:johnnyji.dev@gmail.com)
 
 ### 상세
 
 - **github:** [github.com/johnnyji-dev](https://github.com/johnnyji-dev)
-- **email:** *(타이핑 효과용 — 실제 문구 추가)*
-- **linkedin:** *(타이핑 효과용 — URL 추가)*
-- **telegram:** *(타이핑 효과용 — URL 추가)*
+- **email:** johnnyji.dev@gmail.com
+- **linkedin:** *(URL 추가 예정)*
+- **telegram:** [@JohnnyBlck](https://t.me/JohnnyBlck)
 
 ---
 

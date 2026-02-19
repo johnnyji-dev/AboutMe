@@ -1,0 +1,8 @@
+{
+  "name": "aboutme",
+  "private": true,
+  "scripts": {
+    "start": "npx live-server --port=5173 --open=/",
+    "dev": "npx live-server --port=5173 --open=/"
+  }
+}
