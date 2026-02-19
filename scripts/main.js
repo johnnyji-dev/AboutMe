@@ -187,7 +187,7 @@ const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "GitHub 프로필 기준으로 정리했습니다.",
+      desc: "GitHub 프로필 기준, 공개(Public) 저장소만 표시합니다.",
       tab1: "Blockchains",
       tab2: "Other",
       categories: {
@@ -210,6 +210,18 @@ const DATA = {
             href: "https://github.com/johnnyji-dev/blockchain-tech",
             tag: "JavaScript",
           },
+          {
+            name: "sCtemplate",
+            desc: "스마트 컨트랙트·블록체인 관련 템플릿 (HTML)",
+            href: "https://github.com/johnnyji-dev/sCtemplate",
+            tag: "HTML",
+          },
+          {
+            name: "crypto-wiki",
+            desc: "암호·블록체인 위키/문서",
+            href: "https://github.com/johnnyji-dev/crypto-wiki",
+            tag: "Wiki",
+          },
         ],
         fullstack: [
           {
@@ -217,12 +229,6 @@ const DATA = {
             desc: "이 포트폴리오 웹사이트 (JavaScript)",
             href: "https://github.com/johnnyji-dev/AboutMe",
             tag: "JavaScript",
-          },
-          {
-            name: "sCtemplate",
-            desc: "템플릿 프로젝트 (HTML)",
-            href: "https://github.com/johnnyji-dev/sCtemplate",
-            tag: "HTML",
           },
           {
             name: "johnnyji-dev",
@@ -442,7 +448,7 @@ const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "Based on my GitHub profile repositories.",
+      desc: "Based on my GitHub profile. Public repositories only.",
       tab1: "Blockchains",
       tab2: "Other",
       categories: {
@@ -465,6 +471,18 @@ const DATA = {
             href: "https://github.com/johnnyji-dev/blockchain-tech",
             tag: "JavaScript",
           },
+          {
+            name: "sCtemplate",
+            desc: "Smart contract / blockchain template (HTML)",
+            href: "https://github.com/johnnyji-dev/sCtemplate",
+            tag: "HTML",
+          },
+          {
+            name: "crypto-wiki",
+            desc: "Crypto & blockchain wiki/docs",
+            href: "https://github.com/johnnyji-dev/crypto-wiki",
+            tag: "Wiki",
+          },
         ],
         fullstack: [
           {
@@ -472,12 +490,6 @@ const DATA = {
             desc: "This portfolio website (JavaScript)",
             href: "https://github.com/johnnyji-dev/AboutMe",
             tag: "JavaScript",
-          },
-          {
-            name: "sCtemplate",
-            desc: "Template project (HTML)",
-            href: "https://github.com/johnnyji-dev/sCtemplate",
-            tag: "HTML",
           },
           {
             name: "johnnyji-dev",

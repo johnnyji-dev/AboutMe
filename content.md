@@ -120,14 +120,22 @@ DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.
 
 ## Projects.
 
-[GitHub Profile](https://github.com/johnnyji-dev) 기준으로 정리했습니다.
+[GitHub Profile](https://github.com/johnnyji-dev) 기준으로 정리했습니다. **공개(Public) 저장소만** 표시합니다.
+
+### Blockchains
 
 | 프로젝트 | 설명 | 링크 |
 |---------|------|------|
 | blockchain-node-guides | 블록체인 노드 구축/운영 가이드 (Shell) | [GitHub](https://github.com/johnnyji-dev/blockchain-node-guides) |
 | crypto-wallet-core | 암호화폐 지갑 코어 (TypeScript) | [GitHub](https://github.com/johnnyji-dev/crypto-wallet-core) |
 | blockchain-tech | 블록체인 기술 예제/실습 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/blockchain-tech) |
-| sCtemplate | 템플릿 프로젝트 (HTML) | [GitHub](https://github.com/johnnyji-dev/sCtemplate) |
+| sCtemplate | 스마트 컨트랙트·블록체인 관련 템플릿 (HTML) | [GitHub](https://github.com/johnnyji-dev/sCtemplate) |
+| crypto-wiki | 암호·블록체인 위키/문서 | [GitHub](https://github.com/johnnyji-dev/crypto-wiki) |
+
+### Other
+
+| 프로젝트 | 설명 | 링크 |
+|---------|------|------|
 | AboutMe | 이 포트폴리오 웹사이트 (JavaScript) | [GitHub](https://github.com/johnnyji-dev/AboutMe) |
 | johnnyji-dev | GitHub 프로필 README | [GitHub](https://github.com/johnnyji-dev/johnnyji-dev) |
 
