@@ -225,8 +225,9 @@ export const DATA = {
           {
             name: "crypto-wiki",
             desc: "암호·블록체인 위키/문서",
-            href: "https://github.com/johnnyji-dev/crypto-wiki",
+            href: "https://crypto-wiki-zeta.vercel.app/",
             tag: "Wiki",
+            tags: ["Web"],
           },
         ],
         fullstack: [
@@ -497,8 +498,9 @@ export const DATA = {
           {
             name: "crypto-wiki",
             desc: "Crypto & blockchain wiki/docs",
-            href: "https://github.com/johnnyji-dev/crypto-wiki",
+            href: "https://crypto-wiki-zeta.vercel.app/",
             tag: "Wiki",
+            tags: ["Web"],
           },
         ],
         fullstack: [
