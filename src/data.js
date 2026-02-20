@@ -277,10 +277,10 @@ export const DATA = {
       title: "Skills",
       desc: "실무에서 자주 사용한 기술 스택입니다.",
       groups: [
-        { title: "web3", items: ["Web3.js", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
-        { title: "backend", items: ["NestJS", "Node.js", "Java", "MySQL"] },
-        { title: "frontend", items: ["Next.js", "React"] },
-        { title: "infra", items: ["AWS EC2"] },
+        { title: "web3", items: ["Web3.js", "Ethers.js", "Viem", "Solidity", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
+        { title: "backend", items: ["NestJS", "Node.js", "Golang", "Rust", "Python", "Java", "MySQL"] },
+        { title: "frontend", items: ["Next.js", "React", "TypeScript"] },
+        { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
       ],
     },
     contact: {
@@ -578,10 +578,10 @@ export const DATA = {
       title: "Skills",
       desc: "Technologies I use frequently in production.",
       groups: [
-        { title: "web3", items: ["Web3.js", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
-        { title: "backend", items: ["NestJS", "Node.js", "Java", "MySQL"] },
-        { title: "frontend", items: ["Next.js", "React"] },
-        { title: "infra", items: ["AWS EC2"] },
+        { title: "web3", items: ["Web3.js", "Ethers.js", "Viem", "Solidity", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
+        { title: "backend", items: ["NestJS", "Node.js", "Golang", "Rust", "Python", "Java", "MySQL"] },
+        { title: "frontend", items: ["Next.js", "React", "TypeScript"] },
+        { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
       ],
     },
     contact: {
