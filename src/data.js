@@ -316,12 +316,25 @@ export const DATA = {
       emailValue: "johnnyji.dev@gmail.com",
       linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
       telegramValue: "@JohnnyBlck",
-      noteTitle: "Note",
-      noteP1: "국내/글로벌 채용 모두 고려해 한국어와 영어 콘텐츠를 함께 제공합니다.",
-      noteP2: "링크(이메일/LinkedIn/Telegram)는 필요에 맞게 교체해주세요.",
-    },
-    quote: {
-      text: "Consistently improving just 1% each day may seem small, but it is the most effective path to lasting progress.",
+      etcTitle: "Etc.",
+      etcItems: [
+        {
+          period: "2015.12 - 2017.03",
+          title: "코딩클럽 운영",
+          subtitle: "청소년을 대상으로한 소프트웨어 교육 활동",
+          bullets: [
+            "App-Inventor 수업진행 및 교재개발",
+            "거꾸로 코딩교실 수업진행",
+            "아두이노 워크샵 진행",
+            "청년샘 모집",
+          ],
+        },
+        {
+          title: "책 출판",
+          desc: "일반인들을 대상으로 crypto 배경지식과 서비스 사용법을 소개하는 책 출판",
+          href: "https://product.kyobobook.co.kr/detail/S000218941501",
+        },
+      ],
     },
     footer: { built: "Built with", star: "Star this project on GitHub" },
   },
@@ -642,12 +655,25 @@ export const DATA = {
       emailValue: "johnnyji.dev@gmail.com",
       linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
       telegramValue: "@JohnnyBlck",
-      noteTitle: "Note",
-      noteP1: "This portfolio is written in both Korean and English for domestic and global opportunities.",
-      noteP2: "Replace the placeholders (email/LinkedIn/Telegram) with your real links.",
-    },
-    quote: {
-      text: "Consistently improving just 1% each day may seem small, but it is the most effective path to lasting progress.",
+      etcTitle: "Etc.",
+      etcItems: [
+        {
+          period: "2015.12 - 2017.03",
+          title: "Coding Club Operation",
+          subtitle: "SW education activities for youth",
+          bullets: [
+            "App-Inventor class instruction and textbook development",
+            "Flipped coding classroom instruction",
+            "Arduino workshop instruction",
+            "Recruitment of youth mentors (청년샘)",
+          ],
+        },
+        {
+          title: "Book Publication",
+          desc: "Introductory book on crypto background and service usage for general readers",
+          href: "https://product.kyobobook.co.kr/detail/S000218941501",
+        },
+      ],
     },
     footer: { built: "Built with", star: "Star this project on GitHub" },
   },

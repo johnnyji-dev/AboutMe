@@ -413,10 +413,31 @@ function App() {
                 </div>
               </div>
               <div className="card">
-                <h3 className="card-title">{d.contact.noteTitle}</h3>
-                <p className="card-text">{d.contact.noteP1}</p>
-                <p className="card-text">{d.contact.noteP2}</p>
-                <blockquote className="quote">{d.quote.text}</blockquote>
+                <h3 className="card-title">{d.contact.etcTitle}</h3>
+                {d.contact.etcItems.map((item, i) => (
+                  <div key={i} className="etc-item">
+                    {item.period && (
+                      <p className="etc-period">{item.period}{item.title ? ` / ${item.title}` : ''}</p>
+                    )}
+                    {item.subtitle && <p className="etc-subtitle">{item.subtitle}</p>}
+                    {item.bullets && (
+                      <ul className="etc-bullets">
+                        {item.bullets.map((b, j) => (
+                          <li key={j}>{b}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {item.href && (
+                      <>
+                        {item.title && <p className="card-text"><strong>{item.title}</strong></p>}
+                        <p className="card-text">
+                          <a href={item.href} target="_blank" rel="noopener noreferrer">{item.desc || item.title}</a>
+                        </p>
+                      </>
+                    )}
+                    {item.desc && !item.href && <p className="card-text">{item.desc}</p>}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

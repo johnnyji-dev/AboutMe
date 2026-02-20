@@ -409,6 +409,42 @@ a {
   color: var(--muted);
 }
 
+.etc-item {
+  margin-bottom: 1.25rem;
+}
+.etc-item:last-child {
+  margin-bottom: 0;
+}
+.etc-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
+.etc-period {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  color: var(--text);
+}
+.etc-subtitle {
+  margin: 0 0 8px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.etc-bullets {
+  margin: 0 0 10px 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+.etc-item a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.etc-item a:hover {
+  text-decoration: underline;
+}
+
 /* ===== Experience cards (rendered by JS) ===== */
 .exp-card {
   border: 1px solid var(--border);
