@@ -191,7 +191,8 @@ export const DATA = {
       title: "Projects",
       desc: "GitHub 프로필 기준, 공개(Public) 저장소만 표시합니다.",
       tab1: "Blockchains",
-      tab2: "Other",
+      tab2: "Hackathon",
+      tab3: "Other",
       categories: {
         blockchains: [
           {
@@ -227,6 +228,15 @@ export const DATA = {
             desc: "암호·블록체인 위키/문서",
             href: "https://crypto-wiki-zeta.vercel.app/",
             tag: "Wiki",
+            tags: ["Web"],
+          },
+        ],
+        hackathon: [
+          {
+            name: "sv.practice",
+            desc: "Solana Pay 데모 스토어 (Johnny's shop)",
+            href: "https://sv-practice.vercel.app/",
+            tag: "Web",
             tags: ["Web"],
           },
         ],
@@ -481,7 +491,8 @@ export const DATA = {
       title: "Projects",
       desc: "Based on my GitHub profile. Public repositories only.",
       tab1: "Blockchains",
-      tab2: "Other",
+      tab2: "Hackathon",
+      tab3: "Other",
       categories: {
         blockchains: [
           {
@@ -517,6 +528,15 @@ export const DATA = {
             desc: "Crypto & blockchain wiki/docs",
             href: "https://crypto-wiki-zeta.vercel.app/",
             tag: "Wiki",
+            tags: ["Web"],
+          },
+        ],
+        hackathon: [
+          {
+            name: "sv.practice",
+            desc: "Solana Pay demo store (Johnny's shop)",
+            href: "https://sv-practice.vercel.app/",
+            tag: "Web",
             tags: ["Web"],
           },
         ],

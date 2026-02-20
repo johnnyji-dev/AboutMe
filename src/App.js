@@ -269,12 +269,21 @@ function App() {
               </button>
               <button
                 type="button"
+                className={`tab ${projectTab === 'hackathon' ? 'is-active' : ''}`}
+                role="tab"
+                aria-selected={projectTab === 'hackathon'}
+                onClick={() => setProjectTab('hackathon')}
+              >
+                {d.projects.tab2}
+              </button>
+              <button
+                type="button"
                 className={`tab ${projectTab === 'fullstack' ? 'is-active' : ''}`}
                 role="tab"
                 aria-selected={projectTab === 'fullstack'}
                 onClick={() => setProjectTab('fullstack')}
               >
-                {d.projects.tab2}
+                {d.projects.tab3}
               </button>
             </div>
             <div className="grid-three" aria-live="polite">
