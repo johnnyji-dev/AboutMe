@@ -229,14 +229,16 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "이 포트폴리오 웹사이트 (JavaScript)",
-            href: "https://github.com/johnnyji-dev/AboutMe",
-            tag: "JavaScript",
+            href: "https://about-me-zeta-sand.vercel.app/",
+            tag: "Web",
+            noGitHub: true,
           },
           {
             name: "autoTrading",
             desc: "자동매매 관련 프로젝트",
-            href: "https://github.com/johnnyji-dev/autoTrading",
-            tag: "Project",
+            href: "https://auto-trading-seven.vercel.app/api",
+            tag: "Swagger",
+            noGitHub: true,
           },
           {
             name: "courtalami",
@@ -511,14 +513,16 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "This portfolio website (JavaScript)",
-            href: "https://github.com/johnnyji-dev/AboutMe",
-            tag: "JavaScript",
+            href: "https://about-me-zeta-sand.vercel.app/",
+            tag: "Web",
+            noGitHub: true,
           },
           {
             name: "autoTrading",
             desc: "Auto trading project",
-            href: "https://github.com/johnnyji-dev/autoTrading",
-            tag: "Project",
+            href: "https://auto-trading-seven.vercel.app/api",
+            tag: "Swagger",
+            noGitHub: true,
           },
           {
             name: "courtalami",
