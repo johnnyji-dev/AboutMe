@@ -44,7 +44,8 @@ export const DATA = {
       items: [
         {
           company: "디앤에스에버",
-          period: "2024.09 ~ 재직 중 (1년 6개월)",
+          period: "2024.09 ~ 재직 중 ({duration})",
+          periodStart: "2024-09",
           lede: "다수 블록체인 노드 운영과 입출금 시스템 개발·운영을 담당했습니다.",
           areas: [
             {
@@ -311,7 +312,8 @@ export const DATA = {
       items: [
         {
           company: "DNSever",
-          period: "Sep 2024 — Present",
+          period: "Sep 2024 — Present ({duration})",
+          periodStart: "2024-09",
           lede: "Owned multi-chain node operations and deposit/withdrawal system development & operations.",
           areas: [
             {

@@ -31,6 +31,23 @@ function getTotalExperienceDuration(blockchain, others = OTHERS_DURATION) {
   return { y: Math.floor(totalMonths / 12), m: totalMonths % 12 };
 }
 
+function getDurationFromRange(periodStart, periodEnd, lang) {
+  const [yS, mS] = periodStart.split('-').map(Number);
+  const end = periodEnd ? (() => { const [yE, mE] = periodEnd.split('-').map(Number); return new Date(yE, mE - 1, 1); })() : new Date();
+  const start = new Date(yS, mS - 1, 1);
+  const months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  if (lang === 'ko') return `${y}년 ${m}개월`;
+  return `${y}y ${m}m`;
+}
+
+function formatExpPeriod(item, lang) {
+  if (!item.periodStart) return item.period;
+  const duration = getDurationFromRange(item.periodStart, item.periodEnd ?? null, lang);
+  return item.period.replace(/{duration}/g, duration);
+}
+
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
@@ -175,7 +192,7 @@ function App() {
                 <article key={i} className="exp-card">
                   <div className="exp-top">
                     <h3 className="exp-company">{item.company}</h3>
-                    <div className="exp-period">{item.period}</div>
+                    <div className="exp-period">{formatExpPeriod(item, lang)}</div>
                   </div>
                   <p className="exp-lede">{item.lede}</p>
                   <div className="exp-area">
@@ -210,7 +227,7 @@ function App() {
                       <article key={i} className="exp-card">
                         <div className="exp-top">
                           <h3 className="exp-company">{item.company}</h3>
-                          <div className="exp-period">{item.period}</div>
+                          <div className="exp-period">{formatExpPeriod(item, lang)}</div>
                         </div>
                         <p className="exp-lede">{item.lede}</p>
                         <div className="exp-area">
