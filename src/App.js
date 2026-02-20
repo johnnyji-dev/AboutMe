@@ -14,7 +14,8 @@ function getExperienceDuration() {
   return { y, m };
 }
 
-function formatExperienceForHero({ y, m }) {
+function formatExperienceForHero(lang, { y, m }) {
+  if (lang === 'ko') return `${y}년 ${m}개월+`;
   return `${y}y ${m}m+`;
 }
 
@@ -23,13 +24,24 @@ function formatExperienceForParagraph(lang, { y, m }) {
   return `${y} year${y !== 1 ? 's' : ''} ${m} month${m !== 1 ? 's' : ''}`;
 }
 
+const OTHERS_DURATION = { y: 4, m: 5 };
+
+function getTotalExperienceDuration(blockchain, others = OTHERS_DURATION) {
+  const totalMonths = (blockchain.y * 12 + blockchain.m) + (others.y * 12 + others.m);
+  return { y: Math.floor(totalMonths / 12), m: totalMonths % 12 };
+}
+
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
   const [othersExpanded, setOthersExpanded] = useState(false);
   const experienceDurationRaw = getExperienceDuration();
-  const experienceDuration = formatExperienceForHero(experienceDurationRaw);
+  const experienceDuration = formatExperienceForHero(lang, experienceDurationRaw);
   const experienceDurationForParagraph = formatExperienceForParagraph(lang, experienceDurationRaw);
+  const totalDurationRaw = getTotalExperienceDuration(experienceDurationRaw);
+  const totalDuration = formatExperienceForHero(lang, totalDurationRaw);
+  const othersDurationFormatted =
+    lang === 'ko' ? `${OTHERS_DURATION.y}년 ${OTHERS_DURATION.m}개월` : `${OTHERS_DURATION.y}y ${OTHERS_DURATION.m}m`;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -110,9 +122,12 @@ function App() {
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.years}</span>
-                <span className="value">
-                  {experienceDuration}
-                  <span className="hero-card-value-note"> ({d.facts.yearsNote})</span>
+                <span className="value hero-card-value-with-note">
+                  <span className="hero-card-value-main">{totalDuration}</span>
+                  <span className="hero-card-value-note">
+                    (<span className="hero-card-value-emphasis"><span className="hero-card-value-label">{d.facts.blockchainLabel}</span> <span className="hero-card-value-duration">{experienceDuration}</span></span>
+                    {lang === 'ko' ? ' · ' : ' · '}<span className="hero-card-value-others"><span className="hero-card-value-label">{d.facts.othersRoleLabel}</span> {othersDurationFormatted}</span>)
+                  </span>
                 </span>
               </div>
               <div className="hero-card-row">
