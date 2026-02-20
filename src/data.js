@@ -340,7 +340,7 @@ export const DATA = {
   },
 
   en: {
-    brand: { role: "Full‑stack Blockchain Developer" },
+    brand: { role: "Blockchain Developer" },
     nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", education: "Education", certificates: "Certificates", contact: "Contact" },
     hero: {
       kicker: "Hi, 👋 (a.k.a. Johnny JI)",

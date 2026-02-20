@@ -80,11 +80,13 @@ function App() {
         {lang === 'ko' ? '본문으로 건너뛰기' : 'Skip to main content'}
       </a>
 
-      <header className="site-header">
+      <header className="site-header" data-lang={lang}>
         <div className="container">
           <div className="brand">
-            <span className="brand-dot" aria-hidden="true" />
-            <span className="brand-name">Johnny JI</span>
+            <span className="brand-name-row">
+              <span className="brand-dot" aria-hidden="true" />
+              <span className="brand-name">Johnny JI</span>
+            </span>
             <span className="brand-role">{d.brand.role}</span>
           </div>
 
@@ -109,9 +111,6 @@ function App() {
               <span className="lang-slash" aria-hidden="true">/</span>
               <span className={`lang-pill ${lang === 'ko' ? 'is-muted' : ''}`} aria-hidden="true">EN</span>
             </button>
-            <a className="btn btn-ghost" href="https://github.com/johnnyji-dev" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
           </div>
         </div>
       </header>
