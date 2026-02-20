@@ -280,6 +280,7 @@ export const DATA = {
         { title: "web3", items: ["Web3.js", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
         { title: "backend", items: ["NestJS", "Node.js", "Java", "MySQL"] },
         { title: "frontend", items: ["Next.js", "React"] },
+        { title: "infra", items: ["AWS EC2"] },
       ],
     },
     contact: {
@@ -288,7 +289,7 @@ export const DATA = {
       linksTitle: "Links",
       email: "Email",
       emailValue: "johnnyji.dev@gmail.com",
-      linkedinValue: "프로필 URL을 추가해주세요",
+      linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
       telegramValue: "@JohnnyBlck",
       noteTitle: "Note",
       noteP1: "국내/글로벌 채용 모두 고려해 한국어와 영어 콘텐츠를 함께 제공합니다.",
@@ -580,6 +581,7 @@ export const DATA = {
         { title: "web3", items: ["Web3.js", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
         { title: "backend", items: ["NestJS", "Node.js", "Java", "MySQL"] },
         { title: "frontend", items: ["Next.js", "React"] },
+        { title: "infra", items: ["AWS EC2"] },
       ],
     },
     contact: {
@@ -588,7 +590,7 @@ export const DATA = {
       linksTitle: "Links",
       email: "Email",
       emailValue: "johnnyji.dev@gmail.com",
-      linkedinValue: "Add your profile URL",
+      linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
       telegramValue: "@JohnnyBlck",
       noteTitle: "Note",
       noteP1: "This portfolio is written in both Korean and English for domestic and global opportunities.",
