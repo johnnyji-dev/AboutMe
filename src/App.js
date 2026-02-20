@@ -1,9 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { DATA, STORAGE_KEY_LANG, getInitialLang } from './data';
 
+const EXPERIENCE_START = new Date(2022, 3, 1); // 2022년 4월 1일
+
+function getExperienceDuration() {
+  const end = new Date();
+  const months =
+    (end.getFullYear() - EXPERIENCE_START.getFullYear()) * 12 +
+    (end.getMonth() - EXPERIENCE_START.getMonth()) +
+    (end.getDate() >= EXPERIENCE_START.getDate() ? 0 : -1);
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  return `${y}y ${m}m+`;
+}
+
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
+  const experienceDuration = getExperienceDuration();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -84,7 +98,7 @@ function App() {
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.years}</span>
-                <span className="value">{d.facts.yearsValue}</span>
+                <span className="value">{experienceDuration}</span>
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.location}</span>
