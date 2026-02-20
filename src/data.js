@@ -218,8 +218,9 @@ export const DATA = {
           {
             name: "sCtemplate",
             desc: "스마트 컨트랙트·블록체인 관련 템플릿 (HTML)",
-            href: "https://github.com/johnnyji-dev/sCtemplate",
+            href: "https://sctemplate.vercel.app/",
             tag: "HTML",
+            tags: ["Web"],
           },
           {
             name: "crypto-wiki",
@@ -489,8 +490,9 @@ export const DATA = {
           {
             name: "sCtemplate",
             desc: "Smart contract / blockchain template (HTML)",
-            href: "https://github.com/johnnyji-dev/sCtemplate",
+            href: "https://sctemplate.vercel.app/",
             tag: "HTML",
+            tags: ["Web"],
           },
           {
             name: "crypto-wiki",
