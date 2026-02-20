@@ -26,6 +26,7 @@ function formatExperienceForParagraph(lang, { y, m }) {
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
+  const [othersExpanded, setOthersExpanded] = useState(false);
   const experienceDurationRaw = getExperienceDuration();
   const experienceDuration = formatExperienceForHero(experienceDurationRaw);
   const experienceDurationForParagraph = formatExperienceForParagraph(lang, experienceDurationRaw);
@@ -109,7 +110,10 @@ function App() {
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.years}</span>
-                <span className="value">{experienceDuration}</span>
+                <span className="value">
+                  {experienceDuration}
+                  <span className="hero-card-value-note"> ({d.facts.yearsNote})</span>
+                </span>
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.location}</span>
@@ -152,7 +156,7 @@ function App() {
               <p className="section-desc">{d.exp.desc}</p>
             </div>
             <div className="stack">
-              {d.exp.items.map((item, i) => (
+              {d.exp.items.slice(0, -3).map((item, i) => (
                 <article key={i} className="exp-card">
                   <div className="exp-top">
                     <h3 className="exp-company">{item.company}</h3>
@@ -173,6 +177,44 @@ function App() {
                   </div>
                 </article>
               ))}
+              <div className="exp-others-wrap">
+                <button
+                  type="button"
+                  className="exp-others-toggle"
+                  onClick={() => setOthersExpanded((e) => !e)}
+                  aria-expanded={othersExpanded}
+                >
+                  <span className="exp-others-label">{d.exp.othersLabel}</span>
+                  <span className="exp-others-summary">({d.exp.othersSummary})</span>
+                  <span className="exp-others-period">{d.exp.othersPeriod}</span>
+                  <span className="exp-others-icon" aria-hidden="true">{othersExpanded ? '−' : '+'}</span>
+                </button>
+                {othersExpanded && (
+                  <div className="stack exp-others-stack">
+                    {d.exp.items.slice(-3).map((item, i) => (
+                      <article key={i} className="exp-card">
+                        <div className="exp-top">
+                          <h3 className="exp-company">{item.company}</h3>
+                          <div className="exp-period">{item.period}</div>
+                        </div>
+                        <p className="exp-lede">{item.lede}</p>
+                        <div className="exp-area">
+                          {item.areas.map((a, j) => (
+                            <React.Fragment key={j}>
+                              <h4>{a.title}</h4>
+                              <ul>
+                                {a.bullets.map((b, k) => (
+                                  <li key={k}>{b}</li>
+                                ))}
+                              </ul>
+                            </React.Fragment>
+                          ))}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
