@@ -211,8 +211,9 @@ export const DATA = {
           {
             name: "blockchain-tech",
             desc: "블록체인 기술 예제/실습 (JavaScript)",
-            href: "https://github.com/johnnyji-dev/blockchain-tech",
+            href: "https://blockchain-tech.vercel.app/",
             tag: "JavaScript",
+            tags: ["Web"],
           },
           {
             name: "sCtemplate",
@@ -481,8 +482,9 @@ export const DATA = {
           {
             name: "blockchain-tech",
             desc: "Blockchain tech experiments/examples (JavaScript)",
-            href: "https://github.com/johnnyji-dev/blockchain-tech",
+            href: "https://blockchain-tech.vercel.app/",
             tag: "JavaScript",
+            tags: ["Web"],
           },
           {
             name: "sCtemplate",
