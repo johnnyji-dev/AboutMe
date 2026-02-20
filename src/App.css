@@ -581,6 +581,17 @@ a {
   color: var(--muted);
 }
 
+.project-items {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.project-items li {
+  margin: 2px 0 0 0;
+}
+
 .project-meta {
   display: flex;
   gap: 8px;

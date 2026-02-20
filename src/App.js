@@ -288,6 +288,13 @@ function App() {
                 >
                   <h3 className="project-name">{p.name}</h3>
                   <p className="project-desc">{p.desc}</p>
+                  {p.items && p.items.length > 0 && (
+                    <ul className="project-items">
+                      {p.items.map((item, j) => (
+                        <li key={j}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
                   <div className="project-meta">
                     {(p.tags || [p.tag, "GitHub"]).map((t, j) => (
                       <span key={j} className="pill">{t}</span>
