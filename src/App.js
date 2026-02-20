@@ -278,22 +278,32 @@ function App() {
               </button>
             </div>
             <div className="grid-three" aria-live="polite">
-              {projectsList.map((p, i) => (
-                <a
-                  key={i}
-                  className="project-card"
-                  href={p.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h3 className="project-name">{p.name}</h3>
-                  <p className="project-desc">{p.desc}</p>
-                  <div className="project-meta">
-                    <span className="pill">{p.tag}</span>
-                    <span className="pill">GitHub</span>
+              {projectsList.map((p, i) =>
+                p.noLink ? (
+                  <div key={i} className="project-card">
+                    <h3 className="project-name">{p.name}</h3>
+                    <p className="project-desc">{p.desc}</p>
+                    <div className="project-meta">
+                      <span className="pill">{p.tag}</span>
+                    </div>
                   </div>
-                </a>
-              ))}
+                ) : (
+                  <a
+                    key={i}
+                    className="project-card"
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3 className="project-name">{p.name}</h3>
+                    <p className="project-desc">{p.desc}</p>
+                    <div className="project-meta">
+                      <span className="pill">{p.tag}</span>
+                      {!p.noGitHub && <span className="pill">GitHub</span>}
+                    </div>
+                  </a>
+                )
+              )}
             </div>
           </div>
         </section>
