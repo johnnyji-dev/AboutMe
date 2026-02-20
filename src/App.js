@@ -445,14 +445,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p className="footer-muted">
-            {d.footer.built}{' '}
-            <span className="footer-tech">HTML</span>, <span className="footer-tech">CSS</span>, <span className="footer-tech">JavaScript</span>.
-          </p>
           <p className="footer-muted">© {new Date().getFullYear()} Johnny JI</p>
-          <a className="footer-link" href="https://github.com/johnnyji-dev/AboutMe" target="_blank" rel="noopener noreferrer">
-            {d.footer.star}
-          </a>
         </div>
       </footer>
     </>
