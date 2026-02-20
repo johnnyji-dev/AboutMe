@@ -204,8 +204,9 @@ export const DATA = {
           {
             name: "crypto-wallet-core",
             desc: "암호화폐 지갑 코어 (TypeScript)",
-            href: "https://github.com/johnnyji-dev/crypto-wallet-core",
+            href: "https://crypto-wallet-core.vercel.app/",
             tag: "TypeScript",
+            tags: ["Web"],
           },
           {
             name: "blockchain-tech",
@@ -473,8 +474,9 @@ export const DATA = {
           {
             name: "crypto-wallet-core",
             desc: "Crypto wallet core library (TypeScript)",
-            href: "https://github.com/johnnyji-dev/crypto-wallet-core",
+            href: "https://crypto-wallet-core.vercel.app/",
             tag: "TypeScript",
+            tags: ["Web"],
           },
           {
             name: "blockchain-tech",
