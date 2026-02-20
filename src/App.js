@@ -337,7 +337,7 @@ function App() {
                     <span className="link-k">{d.contact.email}</span>
                     <span className="link-v">{d.contact.emailValue}</span>
                   </a>
-                  <a className="link-item" href="#" aria-disabled="true">
+                  <a className="link-item" href="https://www.linkedin.com/in/johnny-ji-8a42a32b7/" target="_blank" rel="noopener noreferrer">
                     <span className="link-k">LinkedIn</span>
                     <span className="link-v">{d.contact.linkedinValue}</span>
                   </a>
