@@ -234,8 +234,9 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "이 포트폴리오 웹사이트 (JavaScript)",
-            href: "https://github.com/johnnyji-dev/AboutMe",
+            href: "https://about-me-zeta-sand.vercel.app/",
             tag: "JavaScript",
+            tags: ["Web"],
           },
         ],
       },
@@ -501,8 +502,9 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "This portfolio website (JavaScript)",
-            href: "https://github.com/johnnyji-dev/AboutMe",
+            href: "https://about-me-zeta-sand.vercel.app/",
             tag: "JavaScript",
+            tags: ["Web"],
           },
         ],
       },
