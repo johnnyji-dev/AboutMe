@@ -44,8 +44,7 @@ export const DATA = {
       items: [
         {
           company: "디앤에스에버",
-          period: "2024.09 ~ 재직 중 ({duration})",
-          periodStart: "2024-09",
+          period: "2024.09 ~ 재직 중 (1년 6개월)",
           lede: "다수 블록체인 노드 운영과 입출금 시스템 개발·운영을 담당했습니다.",
           areas: [
             {
@@ -229,30 +228,14 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "이 포트폴리오 웹사이트 (JavaScript)",
-            href: "https://about-me-zeta-sand.vercel.app/",
-            tag: "Web",
-            noGitHub: true,
+            href: "https://github.com/johnnyji-dev/AboutMe",
+            tag: "JavaScript",
           },
           {
-            name: "autoTrading",
-            desc: "자동매매 관련 프로젝트",
-            href: "https://auto-trading-seven.vercel.app/api",
-            tag: "Swagger",
-            noGitHub: true,
-          },
-          {
-            name: "courtalami",
-            desc: "테니스 코트 실시간 예약 현황 서비스",
-            href: "https://courtalami.kr/",
-            tag: "Web",
-            noGitHub: true,
-          },
-          {
-            name: "telegram-bot",
-            desc: "notice-broadcaster, chinese-banner, message-extractor",
-            tag: "Bot",
-            noGitHub: true,
-            noLink: true,
+            name: "johnnyji-dev",
+            desc: "GitHub 프로필 README",
+            href: "https://github.com/johnnyji-dev/johnnyji-dev",
+            tag: "Profile",
           },
         ],
       },
@@ -272,7 +255,7 @@ export const DATA = {
       linksTitle: "Links",
       email: "Email",
       emailValue: "johnnyji.dev@gmail.com",
-      linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
+      linkedinValue: "프로필 URL을 추가해주세요",
       telegramValue: "@JohnnyBlck",
       noteTitle: "Note",
       noteP1: "국내/글로벌 채용 모두 고려해 한국어와 영어 콘텐츠를 함께 제공합니다.",
@@ -328,8 +311,7 @@ export const DATA = {
       items: [
         {
           company: "DNSever",
-          period: "Sep 2024 — Present ({duration})",
-          periodStart: "2024-09",
+          period: "Sep 2024 — Present",
           lede: "Owned multi-chain node operations and deposit/withdrawal system development & operations.",
           areas: [
             {
@@ -513,30 +495,14 @@ export const DATA = {
           {
             name: "AboutMe",
             desc: "This portfolio website (JavaScript)",
-            href: "https://about-me-zeta-sand.vercel.app/",
-            tag: "Web",
-            noGitHub: true,
+            href: "https://github.com/johnnyji-dev/AboutMe",
+            tag: "JavaScript",
           },
           {
-            name: "autoTrading",
-            desc: "Auto trading project",
-            href: "https://auto-trading-seven.vercel.app/api",
-            tag: "Swagger",
-            noGitHub: true,
-          },
-          {
-            name: "courtalami",
-            desc: "Tennis court real-time availability & booking",
-            href: "https://courtalami.kr/",
-            tag: "Web",
-            noGitHub: true,
-          },
-          {
-            name: "telegram-bot",
-            desc: "notice-broadcaster, chinese-banner, message-extractor",
-            tag: "Bot",
-            noGitHub: true,
-            noLink: true,
+            name: "johnnyji-dev",
+            desc: "GitHub profile README",
+            href: "https://github.com/johnnyji-dev/johnnyji-dev",
+            tag: "Profile",
           },
         ],
       },
@@ -556,7 +522,7 @@ export const DATA = {
       linksTitle: "Links",
       email: "Email",
       emailValue: "johnnyji.dev@gmail.com",
-      linkedinValue: "linkedin.com/in/johnny-ji-8a42a32b7",
+      linkedinValue: "Add your profile URL",
       telegramValue: "@JohnnyBlck",
       noteTitle: "Note",
       noteP1: "This portfolio is written in both Korean and English for domestic and global opportunities.",
