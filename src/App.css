@@ -287,6 +287,41 @@ a {
   text-align: right;
 }
 
+.hero-card-value-with-note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.hero-card-value-main {
+  font-size: 1.08rem;
+}
+
+.hero-card-value-note {
+  display: block;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero-card-value-duration {
+  font-size: 1.02rem;
+}
+
+.hero-card-value-emphasis {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hero-card-value-label {
+  font-size: 0.72rem;
+}
+
+.hero-card-value-others {
+  font-size: 0.72rem;
+}
+
 .hero-card-divider {
   height: 1px;
   background: var(--border);
@@ -423,6 +458,67 @@ a {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
+}
+
+.exp-others-wrap {
+  display: grid;
+  gap: 14px;
+}
+
+.exp-others-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow2);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.exp-others-toggle:hover {
+  border-color: var(--border2);
+  background: rgba(17, 24, 39, 0.85);
+}
+
+.exp-others-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.exp-others-label {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.exp-others-summary {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.exp-others-period {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.exp-others-icon {
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.exp-others-stack {
+  margin-top: 0;
 }
 
 /* ===== Tabs & Projects ===== */

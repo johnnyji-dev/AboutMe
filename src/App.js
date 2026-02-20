@@ -1,9 +1,64 @@
 import React, { useState, useEffect } from 'react';
 import { DATA, STORAGE_KEY_LANG, getInitialLang } from './data';
 
+const EXPERIENCE_START = new Date(2022, 3, 1); // 2022년 4월 1일
+
+function getExperienceDuration() {
+  const end = new Date();
+  const months =
+    (end.getFullYear() - EXPERIENCE_START.getFullYear()) * 12 +
+    (end.getMonth() - EXPERIENCE_START.getMonth()) +
+    (end.getDate() >= EXPERIENCE_START.getDate() ? 0 : -1);
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  return { y, m };
+}
+
+function formatExperienceForHero(lang, { y, m }) {
+  if (lang === 'ko') return `${y}년 ${m}개월+`;
+  return `${y}y ${m}m+`;
+}
+
+function formatExperienceForParagraph(lang, { y, m }) {
+  if (lang === 'ko') return `${y}년 ${m}개월`;
+  return `${y} year${y !== 1 ? 's' : ''} ${m} month${m !== 1 ? 's' : ''}`;
+}
+
+const OTHERS_DURATION = { y: 4, m: 5 };
+
+function getTotalExperienceDuration(blockchain, others = OTHERS_DURATION) {
+  const totalMonths = (blockchain.y * 12 + blockchain.m) + (others.y * 12 + others.m);
+  return { y: Math.floor(totalMonths / 12), m: totalMonths % 12 };
+}
+
+function getDurationFromRange(periodStart, periodEnd, lang) {
+  const [yS, mS] = periodStart.split('-').map(Number);
+  const end = periodEnd ? (() => { const [yE, mE] = periodEnd.split('-').map(Number); return new Date(yE, mE - 1, 1); })() : new Date();
+  const start = new Date(yS, mS - 1, 1);
+  const months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  if (lang === 'ko') return `${y}년 ${m}개월`;
+  return `${y}y ${m}m`;
+}
+
+function formatExpPeriod(item, lang) {
+  if (!item.periodStart) return item.period;
+  const duration = getDurationFromRange(item.periodStart, item.periodEnd ?? null, lang);
+  return item.period.replace(/{duration}/g, duration);
+}
+
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
+  const [othersExpanded, setOthersExpanded] = useState(false);
+  const experienceDurationRaw = getExperienceDuration();
+  const experienceDuration = formatExperienceForHero(lang, experienceDurationRaw);
+  const experienceDurationForParagraph = formatExperienceForParagraph(lang, experienceDurationRaw);
+  const totalDurationRaw = getTotalExperienceDuration(experienceDurationRaw);
+  const totalDuration = formatExperienceForHero(lang, totalDurationRaw);
+  const othersDurationFormatted =
+    lang === 'ko' ? `${OTHERS_DURATION.y}년 ${OTHERS_DURATION.m}개월` : `${OTHERS_DURATION.y}y ${OTHERS_DURATION.m}m`;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -84,7 +139,13 @@ function App() {
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.years}</span>
-                <span className="value">{d.facts.yearsValue}</span>
+                <span className="value hero-card-value-with-note">
+                  <span className="hero-card-value-main">{totalDuration}</span>
+                  <span className="hero-card-value-note">
+                    (<span className="hero-card-value-emphasis"><span className="hero-card-value-label">{d.facts.blockchainLabel}</span> <span className="hero-card-value-duration">{experienceDuration}</span></span>
+                    {lang === 'ko' ? ' · ' : ' · '}<span className="hero-card-value-others"><span className="hero-card-value-label">{d.facts.othersRoleLabel}</span> {othersDurationFormatted}</span>)
+                  </span>
+                </span>
               </div>
               <div className="hero-card-row">
                 <span className="label">{d.facts.location}</span>
@@ -105,7 +166,7 @@ function App() {
             <div className="grid-two">
               <div className="card">
                 <h3 className="card-title">{d.about.profileTitle}</h3>
-                <p className="card-text">{d.about.profileP1}</p>
+                <p className="card-text">{d.about.profileP1.replace(/{duration}/g, experienceDurationForParagraph)}</p>
                 <p className="card-text">{d.about.profileP2}</p>
               </div>
               <div className="card">
@@ -127,11 +188,11 @@ function App() {
               <p className="section-desc">{d.exp.desc}</p>
             </div>
             <div className="stack">
-              {d.exp.items.map((item, i) => (
+              {d.exp.items.slice(0, -3).map((item, i) => (
                 <article key={i} className="exp-card">
                   <div className="exp-top">
                     <h3 className="exp-company">{item.company}</h3>
-                    <div className="exp-period">{item.period}</div>
+                    <div className="exp-period">{formatExpPeriod(item, lang)}</div>
                   </div>
                   <p className="exp-lede">{item.lede}</p>
                   <div className="exp-area">
@@ -148,6 +209,44 @@ function App() {
                   </div>
                 </article>
               ))}
+              <div className="exp-others-wrap">
+                <button
+                  type="button"
+                  className="exp-others-toggle"
+                  onClick={() => setOthersExpanded((e) => !e)}
+                  aria-expanded={othersExpanded}
+                >
+                  <span className="exp-others-label">{d.exp.othersLabel}</span>
+                  <span className="exp-others-summary">({d.exp.othersSummary})</span>
+                  <span className="exp-others-period">{d.exp.othersPeriod}</span>
+                  <span className="exp-others-icon" aria-hidden="true">{othersExpanded ? '−' : '+'}</span>
+                </button>
+                {othersExpanded && (
+                  <div className="stack exp-others-stack">
+                    {d.exp.items.slice(-3).map((item, i) => (
+                      <article key={i} className="exp-card">
+                        <div className="exp-top">
+                          <h3 className="exp-company">{item.company}</h3>
+                          <div className="exp-period">{formatExpPeriod(item, lang)}</div>
+                        </div>
+                        <p className="exp-lede">{item.lede}</p>
+                        <div className="exp-area">
+                          {item.areas.map((a, j) => (
+                            <React.Fragment key={j}>
+                              <h4>{a.title}</h4>
+                              <ul>
+                                {a.bullets.map((b, k) => (
+                                  <li key={k}>{b}</li>
+                                ))}
+                              </ul>
+                            </React.Fragment>
+                          ))}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
