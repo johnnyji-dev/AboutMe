@@ -289,8 +289,9 @@ function App() {
                   <h3 className="project-name">{p.name}</h3>
                   <p className="project-desc">{p.desc}</p>
                   <div className="project-meta">
-                    <span className="pill">{p.tag}</span>
-                    <span className="pill">GitHub</span>
+                    {(p.tags || [p.tag, "GitHub"]).map((t, j) => (
+                      <span key={j} className="pill">{t}</span>
+                    ))}
                   </div>
                 </a>
               ))}

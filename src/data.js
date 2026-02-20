@@ -197,8 +197,9 @@ export const DATA = {
           {
             name: "blockchain-node-guides",
             desc: "블록체인 노드 구축/운영 가이드 (Shell)",
-            href: "https://github.com/johnnyji-dev/blockchain-node-guides",
+            href: "https://blockchain-node-guides.vercel.app/",
             tag: "Shell",
+            tags: ["Web"],
           },
           {
             name: "crypto-wallet-core",
@@ -465,8 +466,9 @@ export const DATA = {
           {
             name: "blockchain-node-guides",
             desc: "Blockchain node setup & operations guides (Shell)",
-            href: "https://github.com/johnnyji-dev/blockchain-node-guides",
+            href: "https://blockchain-node-guides.vercel.app/",
             tag: "Shell",
+            tags: ["Web"],
           },
           {
             name: "crypto-wallet-core",
