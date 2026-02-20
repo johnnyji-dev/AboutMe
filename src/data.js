@@ -28,12 +28,12 @@ export const DATA = {
       desc: "저는 블록체인 개발자 Johnny 입니다.",
       profileTitle: "Profile",
       profileP1:
-        "총 3년 11개월 동안 CeFi Custody, DeFi 지갑, 스테이킹, 블록체인 노드·인프라 개발 및 유지보수를 담당했습니다.",
+        "총 {duration} 동안 CeFi Custody, DeFi 지갑, 스테이킹, 블록체인 노드·인프라 개발 및 유지보수를 담당했습니다.",
       profileP2: "안정적인 블록체인 서비스 구축과 풀스택 성장을 지향합니다.",
       interestTitle: "Interests",
-      interest1: "BaaS(Blockchain as a Service)와 DeFi 인프라",
-      interest2: "RWA(Real World Asset) 기반 서비스",
-      interest3: "운영 안정성(관측성·자동복구·비용최적화)",
+      interest1: "DeFi와 유의미한 서비스의 방향성",
+      interest2: "크립토 사용자 성향·니즈 파악",
+      interest3: "크립토 서비스의 운영 안정성과 신뢰도 제고",
     },
     exp: {
       title: "Experience",
@@ -289,12 +289,12 @@ export const DATA = {
       desc: "Blockchain developer focused on production reliability.",
       profileTitle: "Profile",
       profileP1:
-        "I have 3 years 11 months of experience across CeFi custody, DeFi wallets, staking, and blockchain node/infrastructure development & operations.",
+        "I have {duration} of experience across CeFi custody, DeFi wallets, staking, and blockchain node/infrastructure development & operations.",
       profileP2: "I care about building scalable, observable, and resilient blockchain services.",
       interestTitle: "Interests",
-      interest1: "BaaS (Blockchain as a Service) and DeFi infrastructure",
-      interest2: "RWA (Real World Asset) products",
-      interest3: "Operational excellence (observability, auto-recovery, cost optimization)",
+      interest1: "DeFi and direction for meaningful services",
+      interest2: "Understanding crypto user behavior and needs",
+      interest3: "Operational reliability and trust in crypto services",
     },
     exp: {
       title: "Experience",

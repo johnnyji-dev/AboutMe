@@ -11,13 +11,24 @@ function getExperienceDuration() {
     (end.getDate() >= EXPERIENCE_START.getDate() ? 0 : -1);
   const y = Math.floor(months / 12);
   const m = months % 12;
+  return { y, m };
+}
+
+function formatExperienceForHero({ y, m }) {
   return `${y}y ${m}m+`;
+}
+
+function formatExperienceForParagraph(lang, { y, m }) {
+  if (lang === 'ko') return `${y}년 ${m}개월`;
+  return `${y} year${y !== 1 ? 's' : ''} ${m} month${m !== 1 ? 's' : ''}`;
 }
 
 function App() {
   const [lang, setLang] = useState(getInitialLang);
   const [projectTab, setProjectTab] = useState('blockchains');
-  const experienceDuration = getExperienceDuration();
+  const experienceDurationRaw = getExperienceDuration();
+  const experienceDuration = formatExperienceForHero(experienceDurationRaw);
+  const experienceDurationForParagraph = formatExperienceForParagraph(lang, experienceDurationRaw);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -119,7 +130,7 @@ function App() {
             <div className="grid-two">
               <div className="card">
                 <h3 className="card-title">{d.about.profileTitle}</h3>
-                <p className="card-text">{d.about.profileP1}</p>
+                <p className="card-text">{d.about.profileP1.replace(/{duration}/g, experienceDurationForParagraph)}</p>
                 <p className="card-text">{d.about.profileP2}</p>
               </div>
               <div className="card">
