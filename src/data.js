@@ -2,7 +2,7 @@ export const STORAGE_KEY_LANG = "portfolio_lang";
 export const DATA = {
   ko: {
     brand: { role: "블록체인 개발자" },
-    nav: { about: "소개", experience: "경력", projects: "프로젝트", skills: "스킬", contact: "연락처" },
+    nav: { about: "소개", experience: "경력", projects: "프로젝트", skills: "스킬", education: "학력", certificates: "자격증", contact: "연락처" },
     hero: {
       kicker: "Hi, 👋 (a.k.a. Johnny JI)",
       title: "Blockchain Developer",
@@ -283,6 +283,31 @@ export const DATA = {
         { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
       ],
     },
+    education: {
+      title: "Univ.",
+      desc: "",
+      items: [
+        {
+          period: "2009.03 - 2015.08",
+          school: "연세대학교(원주)",
+          major: "의용전자공학 전공 / 경영학 부전공",
+          gpa: "(3.83/4.5)",
+          bullets: [
+            "국가 이공계 장학금 9학기 중 7학기 전액 수령",
+            "휴대용 단말기용 외장 키패드 특허출원(2014)",
+            "교내 캡스톤 디자인 경진대회 2회 수상(우수상, 장려상)",
+          ],
+        },
+      ],
+    },
+    certificates: {
+      title: "Certificates.",
+      items: [
+        { date: "2016.07", name: "정보처리기사", issuer: "한국산업인력공단" },
+        { date: "2014.12", name: "의공기사", issuer: "한국산업인력공단" },
+        { date: "2013.09", name: "AutoCAD 1급", issuer: "한국ATC센터" },
+      ],
+    },
     contact: {
       title: "Contact",
       desc: "연락은 GitHub 또는 이메일로 주시면 가장 빠릅니다.",
@@ -303,7 +328,7 @@ export const DATA = {
 
   en: {
     brand: { role: "Full‑stack Blockchain Developer" },
-    nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", contact: "Contact" },
+    nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", education: "Education", certificates: "Certificates", contact: "Contact" },
     hero: {
       kicker: "Hi, 👋 (a.k.a. Johnny JI)",
       title: "Blockchain Developer",
@@ -582,6 +607,31 @@ export const DATA = {
         { title: "backend", items: ["NestJS", "Node.js", "Golang", "Rust", "Python", "Java", "MySQL"] },
         { title: "frontend", items: ["Next.js", "React", "TypeScript"] },
         { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
+      ],
+    },
+    education: {
+      title: "Univ.",
+      desc: "",
+      items: [
+        {
+          period: "2009.03 - 2015.08",
+          school: "Yonsei University (Wonju)",
+          major: "Applied Electronic Engineering Major / Business Administration Minor",
+          gpa: "(3.83/4.5)",
+          bullets: [
+            "Received full national scholarship for 7 out of 9 semesters in STEM fields",
+            "Patent application for external keypad for portable terminals (2014)",
+            "Awarded twice in campus Capstone Design Competition (Excellence Award, Encouragement Award)",
+          ],
+        },
+      ],
+    },
+    certificates: {
+      title: "Certificates.",
+      items: [
+        { date: "2016.07", name: "Information Processing Engineer", issuer: "HRD Korea" },
+        { date: "2014.12", name: "Biomedical Engineer", issuer: "HRD Korea" },
+        { date: "2013.09", name: "AutoCAD Level 1", issuer: "Korea ATC Center" },
       ],
     },
     contact: {

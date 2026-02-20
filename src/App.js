@@ -93,6 +93,8 @@ function App() {
             <a className="nav-link" href="#experience">{d.nav.experience}</a>
             <a className="nav-link" href="#projects">{d.nav.projects}</a>
             <a className="nav-link" href="#skills">{d.nav.skills}</a>
+            <a className="nav-link" href="#education">{d.nav.education}</a>
+            <a className="nav-link" href="#certificates">{d.nav.certificates}</a>
             <a className="nav-link" href="#contact">{d.nav.contact}</a>
           </nav>
 
@@ -331,6 +333,52 @@ function App() {
                     ))}
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="education">
+          <div className="container">
+            <div className="section-head">
+              <h2 className="section-title">{d.education.title}</h2>
+              {d.education.desc ? <p className="section-desc">{d.education.desc}</p> : null}
+            </div>
+            <div className="stack">
+              {d.education.items.map((item, i) => (
+                <article key={i} className="exp-card">
+                  <div className="exp-top">
+                    <h3 className="exp-company">{item.school}</h3>
+                    <div className="exp-period">{item.period}</div>
+                  </div>
+                  <p className="exp-lede">{item.major} {item.gpa}</p>
+                  <div className="exp-area">
+                    <ul>
+                      {item.bullets.map((b, k) => (
+                        <li key={k}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="certificates">
+          <div className="container">
+            <div className="section-head">
+              <h2 className="section-title">{d.certificates.title}</h2>
+            </div>
+            <div className="stack">
+              {d.certificates.items.map((item, i) => (
+                <article key={i} className="exp-card">
+                  <div className="exp-top">
+                    <h3 className="exp-company">{item.name}</h3>
+                    <div className="exp-period">{item.date}</div>
+                  </div>
+                  <p className="exp-lede">{item.issuer}</p>
+                </article>
               ))}
             </div>
           </div>
