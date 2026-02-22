@@ -189,7 +189,7 @@ export const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "GitHub 프로필 기준, 공개(Public) 저장소만 표시합니다.",
+      desc: "GitHub 프로필 기준이며, 비공개(Private) 저장소는 해당 웹페이지 링크로 연결해 두었습니다.",
       tab1: "Blockchains",
       tab2: "Hackathon",
       tab3: "Other",
@@ -528,7 +528,7 @@ export const DATA = {
     },
     projects: {
       title: "Projects",
-      desc: "Based on my GitHub profile. Public repositories only.",
+      desc: "Based on my GitHub profile. Private repositories are linked to their web pages.",
       tab1: "Blockchains",
       tab2: "Hackathon",
       tab3: "Other",
