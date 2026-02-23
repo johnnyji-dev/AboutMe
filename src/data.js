@@ -301,11 +301,11 @@ export const DATA = {
       ],
     },
     certificates: {
-      title: "Certificates.",
+      title: "자격증",
       items: [
-        { date: "2016.07", name: "정보처리기사", issuer: "한국산업인력공단" },
-        { date: "2014.12", name: "의공기사", issuer: "한국산업인력공단" },
-        { date: "2013.09", name: "AutoCAD 1급", issuer: "한국ATC센터" },
+        { date: "2016년 7월", name: "정보처리기사", issuer: "한국산업인력공단" },
+        { date: "2014년 12월", name: "의공기사", issuer: "한국산업인력공단" },
+        { date: "2013년 9월", name: "AutoCAD 1급", issuer: "한국ATC센터" },
       ],
     },
     contact: {
@@ -640,11 +640,11 @@ export const DATA = {
       ],
     },
     certificates: {
-      title: "Certificates.",
+      title: "Certificates",
       items: [
-        { date: "2016.07", name: "Information Processing Engineer", issuer: "HRD Korea" },
-        { date: "2014.12", name: "Biomedical Engineer", issuer: "HRD Korea" },
-        { date: "2013.09", name: "AutoCAD Level 1", issuer: "Korea ATC Center" },
+        { date: "July 2016", name: "Engineer Information Processing", issuer: "Human Resources Development Service of Korea" },
+        { date: "December 2014", name: "Engineer (Medical Engineering)", issuer: "Human Resources Development Service of Korea" },
+        { date: "September 2013", name: "AutoCAD Level 1", issuer: "Korea ATC Center" },
       ],
     },
     contact: {
