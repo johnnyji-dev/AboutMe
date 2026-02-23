@@ -102,10 +102,12 @@
     .skill-cat strong { display: inline-block; margin-right: 6px; }
     .skill-cat span { color: var(--muted); }
 
-    .etc-item { margin-bottom: 10px; }
+    .etc-item { margin-bottom: 12px; }
+    .etc-item:last-child { margin-bottom: 0; }
     .etc-period { font-weight: 600; margin: 0 0 2px 0; font-size: 9.5pt; }
+    .etc-title { margin: 0 0 2px 0; font-size: 9.5pt; }
     .etc-desc { margin: 0; font-size: 9.5pt; color: var(--muted); }
-    .etc-bullets { margin: 4px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
+    .etc-bullets { margin: 2px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
   </style>
 </head>
 <body>
@@ -284,7 +286,10 @@
     </div>
     <div class="etc-item">
       <p class="etc-period">Book Publication</p>
-      <p class="etc-desc">Introductory book on crypto background and service usage for general readers</p>
+      <p class="etc-title">30-Min DeFi Coin Investing 1: Introduction</p>
+      <ul class="etc-bullets">
+        <li>Introductory book on crypto background and service usage for general readers</li>
+      </ul>
     </div>
   </section>
 </body>
