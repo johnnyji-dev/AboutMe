@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Johnny JI</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #444;
+      --border: #ddd;
+      --accent: #0d7377;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 24px 32px;
+      font-family: "DM Sans", "Segoe UI", system-ui, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: var(--text);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media print {
+      body { padding: 0 16px; font-size: 10pt; }
+      .no-print { display: none !important; }
+      a { color: var(--text); text-decoration: none; }
+    }
+
+    .no-print {
+      margin-bottom: 16px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .no-print a { color: var(--accent); }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 4px 0;
+      letter-spacing: -0.02em;
+    }
+    .role {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 0 0 12px 0;
+    }
+    .contact {
+      font-size: 9.5pt;
+      color: var(--muted);
+      margin: 0 0 20px 0;
+    }
+    .contact span + span::before { content: " · "; }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      margin: 18px 0 8px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .section:first-of-type h2 { margin-top: 0; }
+
+    .exp-block { margin-bottom: 16px; }
+    .exp-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .exp-company { font-weight: 700; margin: 0; font-size: 10.5pt; }
+    .exp-period { font-size: 9.5pt; color: var(--muted); white-space: nowrap; }
+    .exp-lede { margin: 4px 0 8px 0; color: var(--muted); font-size: 9.5pt; }
+    .exp-area { margin-bottom: 8px; }
+    .exp-area h4 { margin: 0 0 4px 0; font-size: 9.5pt; font-weight: 600; }
+    .exp-area ul { margin: 0; padding-left: 18px; }
+    .exp-area li { margin: 2px 0; }
+
+    .edu-block { margin-bottom: 12px; }
+    .edu-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+    .edu-school { font-weight: 700; margin: 0; }
+    .edu-meta { font-size: 9.5pt; color: var(--muted); }
+    .edu-bullets { margin: 6px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
+
+    .cert-list { margin: 0; padding: 0; list-style: none; }
+    .cert-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin: 6px 0;
+      flex-wrap: wrap;
+    }
+    .cert-name { font-weight: 600; }
+    .cert-meta { font-size: 9.5pt; color: var(--muted); }
+
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 10px 16px; margin: 8px 0 0 0; }
+    .skill-cat { font-size: 9.5pt; }
+    .skill-cat strong { display: inline-block; margin-right: 6px; }
+    .skill-cat span { color: var(--muted); }
+
+    .etc-item { margin-bottom: 12px; }
+    .etc-item:last-child { margin-bottom: 0; }
+    .etc-period { font-weight: 600; margin: 0 0 2px 0; font-size: 9.5pt; }
+    .etc-title { margin: 0 0 2px 0; font-size: 9.5pt; }
+    .etc-desc { margin: 0; font-size: 9.5pt; color: var(--muted); }
+    .etc-bullets { margin: 2px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
+  </style>
+</head>
+<body>
+  <!-- <p class="no-print">Use <strong>Print (Ctrl+P / Cmd+P)</strong> → choose <strong>Save as PDF</strong> to create a PDF. <a href="resume-ko.html">한국어 버전</a></p> -->
+
+  <h1>Johnny JI</h1>
+  <p class="role">Blockchain Developer</p>
+  <p class="contact">
+    <span>johnnyji.dev@gmail.com</span>
+    <span>linkedin.com/in/johnny-ji-8a42a32b7</span>
+    <span>Telegram @JohnnyBlck</span>
+    <span>Korea / Global (Remote-friendly)</span>
+  </p>
+
+  <section class="section">
+    <h2>Summary</h2>
+    <p>3y 11m+ experience in CeFi custody, DeFi wallets, staking, and blockchain node/infrastructure development & operations. Focus on building scalable, observable, and resilient blockchain services.</p>
+  </section>
+
+  <section class="section">
+    <h2>Experience</h2>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">DNSever</h3>
+        <span class="exp-period">Sep 2024 — Present</span>
+      </div>
+      <p class="exp-lede">Owned multi-chain node operations and deposit/withdrawal system development & operations.</p>
+      <div class="exp-area">
+        <h4>Node Operations & Infrastructure</h4>
+        <ul>
+          <li>Installed, configured, and operated full nodes across 70+ mainnets (EVM, Cosmos SDK, Substrate, DAG, etc.)</li>
+          <li>Planned and executed zero-downtime upgrades for hard forks and soft forks</li>
+          <li>Built monitoring and alerting for sync health, block height lag, and peer issues</li>
+          <li>Performed incident triage (logs/RPC checks), recovery, re-installs, and snapshot restores</li>
+          <li>Integrated public RPC endpoints with health checks and automated failover</li>
+          <li>Hardened servers (firewalls, SSH key management, port restrictions, access control)</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>Deposit/Withdrawal Systems</h4>
+        <ul>
+          <li>Built and operated pipelines for coin/token deposits and withdrawals; integrated new chains/tokens (incl. contract analysis/deployment)</li>
+          <li>Implemented and tuned block parsing and transaction validation logic</li>
+          <li>Verified balances (account-based & UTXO) and handled mismatches with rescans and reconciliation</li>
+          <li>Improved fee strategies and retry flows for failed withdrawals (e.g., gas price aggregation/optimization)</li>
+          <li>Produced operational metrics, dashboards, and reporting</li>
+          <li>Supported listing/delisting flows (contract verification, wallet integration, balance migration)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">Cryptalon Korea</h3>
+        <span class="exp-period">Apr 2024 — Aug 2024</span>
+      </div>
+      <p class="exp-lede">Built DeFi wallet features and handled Solana token minting for DApps.</p>
+      <div class="exp-area">
+        <h4>DeFi Wallet Development</h4>
+        <ul>
+          <li>Designed and implemented multi-chain wallet architecture for EVM networks (Ethereum, BNB Smart Chain)</li>
+          <li>Implemented wallet creation/recovery (mnemonic-based HD wallets, private key import)</li>
+          <li>Constructed, signed, and broadcast native and ERC-20/BEP-20 transfers; NFT mint/transfer (ERC-721/1155, BEP-721/1155)</li>
+          <li>Tracked transaction lifecycle (pending → confirmed) with retry strategies; gas estimation and fee UX integration</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>Solana SPL Token Control</h4>
+        <ul>
+          <li>Implemented SPL token mint/burn/freeze/thaw; token metadata updates</li>
+          <li>Managed RPC connectivity across clusters (devnet/mainnet); signing workflows with fee estimation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">NIF</h3>
+        <span class="exp-period">Apr 2022 — Mar 2024</span>
+      </div>
+      <p class="exp-lede">Built custody-grade deposit/withdrawal systems for major assets and developed staking services.</p>
+      <div class="exp-area">
+        <h4>Deposit/Withdrawal Systems</h4>
+        <ul>
+          <li>Developed and maintained backends for major assets (BTC, ETH, USDT, USDC, DAI, etc.) (Java, MySQL)</li>
+          <li>Operated deposit detection (block scans/event listening) and withdrawal validation/sign/broadcast pipelines</li>
+          <li>Implemented low-fee strategies and alerts; built monitoring dashboards and abnormal transaction triage</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>Staking Services</h4>
+        <ul>
+          <li>Implemented staking/unstaking/claim-reward transaction logic across multiple chains (Java, MySQL, NestJS)</li>
+          <li>Handled protocol upgrades (validator config, reward calculation updates)</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>Nodes & Infrastructure</h4>
+        <ul>
+          <li>Installed and maintained full nodes for production (AWS EC2); automated sync monitoring and alerts</li>
+          <li>Managed upgrades, fork response, and compute/storage resources</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">Unimax</h3>
+        <span class="exp-period">Oct 2017 — Dec 2019</span>
+      </div>
+      <p class="exp-lede">R&D Engineer, Development Team. Defense equipment and test software development.</p>
+      <ul><li>Defense equipment control and test software; test automation, data collection, and reporting; software reliability testing</li></ul>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">GYROZEN</h3>
+        <span class="exp-period">Sep 2015 — Feb 2017</span>
+      </div>
+      <p class="exp-lede">Developer, Development Team. Life-science equipment and outsourced HW/SW management.</p>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">Amaris (Lifetime Partner)</h3>
+        <span class="exp-period">Jan 2015 — Aug 2015</span>
+      </div>
+      <p class="exp-lede">Technical staff. Maintenance of imported ophthalmic equipment.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Education</h2>
+    <div class="edu-block">
+      <div class="edu-head">
+        <span class="edu-school">Yonsei University (Wonju)</span>
+        <span class="edu-meta">2009.03 - 2015.08 · (3.83/4.5)</span>
+      </div>
+      <p class="edu-meta">Applied Electronic Engineering Major / Business Administration Minor</p>
+      <ul class="edu-bullets">
+        <li>Received full national scholarship for 7 out of 9 semesters in STEM fields</li>
+        <li>Patent application for external keypad for portable terminals (2014)</li>
+        <li>Awarded twice in campus Capstone Design Competition (Excellence Award, Encouragement Award)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Certificates</h2>
+    <ul class="cert-list">
+      <li><span class="cert-name">Engineer Information Processing</span><span class="cert-meta">Human Resources Development Service of Korea · July 2016</span></li>
+      <li><span class="cert-name">Engineer (Medical Engineering)</span><span class="cert-meta">Human Resources Development Service of Korea · December 2014</span></li>
+      <li><span class="cert-name">AutoCAD Level 1</span><span class="cert-meta">Korea ATC Center · September 2013</span></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <p class="skill-cat"><strong>Web3</strong><span>Web3.js, Ethers.js, Viem, Solidity, ICON SDK JS, Polkadot.js, Near SDK JS, BandChain.js</span></p>
+      <p class="skill-cat"><strong>Backend</strong><span>NestJS, Node.js, Golang, Rust, Python, Java, MySQL</span></p>
+      <p class="skill-cat"><strong>Frontend</strong><span>Next.js, React, TypeScript</span></p>
+      <p class="skill-cat"><strong>Infra</strong><span>AWS, Docker, CI/CD</span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Etc.</h2>
+    <div class="etc-item">
+      <p class="etc-period">2015.12 - 2017.03 / Coding Club Operation</p>
+      <p class="etc-desc">SW education activities for youth</p>
+      <ul class="etc-bullets">
+        <li>App-Inventor class instruction and textbook development; flipped coding classroom; Arduino workshop; recruitment of youth mentors</li>
+      </ul>
+    </div>
+    <div class="etc-item">
+      <p class="etc-period">Book Publication</p>
+      <p class="etc-title">30-Min DeFi Coin Investing 1: Introduction</p>
+      <ul class="etc-bullets">
+        <li>Introductory book on crypto background and service usage for general readers</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
