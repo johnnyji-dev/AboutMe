@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>경력기술서 — Johnny JI</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #444;
+      --border: #ddd;
+      --accent: #0d7377;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 24px 32px;
+      font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: var(--text);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media print {
+      body { padding: 0 16px; font-size: 10pt; }
+      .no-print { display: none !important; }
+      a { color: var(--text); text-decoration: none; }
+    }
+
+    .no-print {
+      margin-bottom: 16px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .no-print a { color: var(--accent); }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 4px 0;
+      letter-spacing: -0.02em;
+    }
+    .role {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 0 0 12px 0;
+    }
+    .contact {
+      font-size: 9.5pt;
+      color: var(--muted);
+      margin: 0 0 20px 0;
+    }
+    .contact span + span::before { content: " · "; }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      margin: 18px 0 8px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .section:first-of-type h2 { margin-top: 0; }
+
+    .exp-block { margin-bottom: 16px; }
+    .exp-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .exp-company { font-weight: 700; margin: 0; font-size: 10.5pt; }
+    .exp-period { font-size: 9.5pt; color: var(--muted); white-space: nowrap; }
+    .exp-lede { margin: 4px 0 8px 0; color: var(--muted); font-size: 9.5pt; }
+    .exp-area { margin-bottom: 8px; }
+    .exp-area h4 { margin: 0 0 4px 0; font-size: 9.5pt; font-weight: 600; }
+    .exp-area ul { margin: 0; padding-left: 18px; }
+    .exp-area li { margin: 2px 0; }
+
+    .edu-block { margin-bottom: 12px; }
+    .edu-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+    .edu-school { font-weight: 700; margin: 0; }
+    .edu-meta { font-size: 9.5pt; color: var(--muted); }
+    .edu-bullets { margin: 6px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
+
+    .cert-list { margin: 0; padding: 0; list-style: none; }
+    .cert-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin: 6px 0;
+      flex-wrap: wrap;
+    }
+    .cert-name { font-weight: 600; }
+    .cert-meta { font-size: 9.5pt; color: var(--muted); }
+
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 10px 16px; margin: 8px 0 0 0; }
+    .skill-cat { font-size: 9.5pt; }
+    .skill-cat strong { display: inline-block; margin-right: 6px; }
+    .skill-cat span { color: var(--muted); }
+
+    .etc-item { margin-bottom: 10px; }
+    .etc-period { font-weight: 600; margin: 0 0 2px 0; font-size: 9.5pt; }
+    .etc-desc { margin: 0; font-size: 9.5pt; color: var(--muted); }
+    .etc-bullets { margin: 4px 0 0 0; padding-left: 18px; font-size: 9.5pt; }
+  </style>
+</head>
+<body>
+  <!-- <p class="no-print">브라우저에서 <strong>인쇄(Ctrl+P / Cmd+P)</strong> → 대상에서 <strong>PDF로 저장</strong>을 선택하면 경력기술서 PDF를 만들 수 있습니다. <a href="resume-en.html">English version</a></p> -->
+
+  <h1>Johnny JI</h1>
+  <p class="role">블록체인 개발자</p>
+  <p class="contact">
+    <span>johnnyji.dev@gmail.com</span>
+    <span>linkedin.com/in/johnny-ji-8a42a32b7</span>
+    <span>Telegram @JohnnyBlck</span>
+    <span>Korea / Global (Remote-friendly)</span>
+  </p>
+
+  <section class="section">
+    <h2>요약</h2>
+    <p>총 3년 11개월 이상 CeFi Custody, DeFi 지갑, 스테이킹, 블록체인 노드·인프라 개발 및 유지보수 경험. 안정적인 블록체인 서비스 구축과 풀스택 성장을 지향합니다.</p>
+  </section>
+
+  <section class="section">
+    <h2>경력</h2>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">디앤에스에버</h3>
+        <span class="exp-period">2024.09 ~ 재직 중</span>
+      </div>
+      <p class="exp-lede">다수 블록체인 노드 운영과 입출금 시스템 개발·운영을 담당했습니다.</p>
+      <div class="exp-area">
+        <h4>노드 운영·인프라</h4>
+        <ul>
+          <li>70여 개 메인넷 풀노드 설치·구성 및 일상 운영 (EVM, Cosmos SDK, Substrate, DAG 등)</li>
+          <li>하드포크·소프트포크 사전 분석 및 무중단 버전 업그레이드 수행</li>
+          <li>노드 동기화 상태 모니터링, 블록 높이 지연·피어 이상 감지 시 자동 알림 구성</li>
+          <li>장애 발생 시 원인 분석(로그·RPC 상태 점검)과 긴급 복구, 노드 재설치·데이터 스냅샷 복원</li>
+          <li>공용 RPC 엔드포인트 확보·연동 및 헬스체크·자동 전환 로직 운영</li>
+          <li>서버 보안 설정(방화벽, SSH 키 관리, 포트 제한) 및 접근 제어 관리</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>입출금 시스템 개발·운영</h4>
+        <ul>
+          <li>코인·토큰 입출금 파이프라인 개발 및 신규 체인·토큰 연동 (컨트랙트 분석·배포 포함)</li>
+          <li>블록 데이터 파싱 로직 개발·보정 및 트랜잭션 검증 처리</li>
+          <li>잔고 검증(account balance, UTXO) 및 불일치 시 보정·리스캔 대응</li>
+          <li>출금 오류 탐지·재처리 및 수수료 정책 개선 (가스비 평균 산출·최적 가스 전략 적용)</li>
+          <li>입출금 통계·보고서 생성 및 운영 지표 대시보드 관리</li>
+          <li>토큰 상장·상폐 프로세스 처리 (컨트랙트 검증, 지갑 연동, 잔고 이관)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">주식회사 크립탈론코리아</h3>
+        <span class="exp-period">2024.04 ~ 2024.08 (5개월)</span>
+      </div>
+      <p class="exp-lede">DeFi 지갑 개발과 DApp용 Solana 토큰 민팅 업무를 수행했습니다.</p>
+      <div class="exp-area">
+        <h4>DeFi 지갑 개발</h4>
+        <ul>
+          <li>EVM 계열(Ethereum, BNB Smart Chain) 멀티체인 지갑 아키텍처 설계·구현</li>
+          <li>지갑 생성·복구 기능 구현 (mnemonic 시드 기반 HD Wallet, Private Key import)</li>
+          <li>네이티브 코인 및 ERC-20/BEP-20 토큰 전송 트랜잭션 구성·서명·브로드캐스트</li>
+          <li>NFT(ERC-721/1155, BEP-721/1155) 민팅·전송 기능 개발</li>
+          <li>트랜잭션 상태 추적 및 실패 시 재시도 로직 구현</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>Solana SPL Token 제어</h4>
+        <ul>
+          <li>SPL Token minting, burn, freeze, thaw 기능 구현</li>
+          <li>Solana 클러스터(devnet/mainnet) 연결 구성 및 RPC 노드 관리</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">주식회사엔아이에프</h3>
+        <span class="exp-period">2022.04 ~ 2024.03 (2년)</span>
+      </div>
+      <p class="exp-lede">메이저 자산 입출금 관리와 스테이킹 서비스 개발을 담당했습니다.</p>
+      <div class="exp-area">
+        <h4>입출금 시스템</h4>
+        <ul>
+          <li>BTC, ETH, USDT, USDC, DAI 등 주요 자산의 입출금 백엔드 개발·유지보수 (Java, MySQL)</li>
+          <li>입금 감지(블록 스캔·이벤트 리스닝), 출금 요청 검증·서명·브로드캐스트 파이프라인 운영</li>
+          <li>수수료 부족 시 자동 알림 및 핫월렛 수수료 절감 로직 적용</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>스테이킹 서비스</h4>
+        <ul>
+          <li>다수 체인 대상 staking/unstaking/claim-reward 트랜잭션 처리 로직 개발 (Java, MySQL, NestJS)</li>
+          <li>스테이킹 프로토콜 버전 업그레이드 대응 및 보상 계산 로직 갱신</li>
+        </ul>
+      </div>
+      <div class="exp-area">
+        <h4>노드·인프라</h4>
+        <ul>
+          <li>블록체인 풀노드 설치·유지보수 (AWS EC2), 동기화 상태 모니터링·알림 자동화</li>
+          <li>노드 버전 업데이트 및 하드포크 대응</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">유니맥스</h3>
+        <span class="exp-period">2017.10 ~ 2019.12 (2년 3개월)</span>
+      </div>
+      <p class="exp-lede">개발팀 연구원. 방산장비 및 시험 소프트웨어 개발.</p>
+      <ul><li>방산장비 제어·시험 소프트웨어 개발 및 연동, 시험 자동화 및 데이터 수집·리포팅</li></ul>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">GYROZEN</h3>
+        <span class="exp-period">2015.09 ~ 2017.02 (1년 6개월)</span>
+      </div>
+      <p class="exp-lede">개발팀 사원. 생명과학 장비 및 외주 개발 관리.</p>
+    </div>
+
+    <div class="exp-block">
+      <div class="exp-head">
+        <h3 class="exp-company">(주)평생동반자 우리</h3>
+        <span class="exp-period">2015.01 ~ 2015.08 (8개월)</span>
+      </div>
+      <p class="exp-lede">기술부 사원. 수입 안과 장비 유지보수.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>학력</h2>
+    <div class="edu-block">
+      <div class="edu-head">
+        <span class="edu-school">연세대학교(원주)</span>
+        <span class="edu-meta">2009.03 - 2015.08 · (3.83/4.5)</span>
+      </div>
+      <p class="edu-meta">의용전자공학 전공 / 경영학 부전공</p>
+      <ul class="edu-bullets">
+        <li>국가 이공계 장학금 9학기 중 7학기 전액 수령</li>
+        <li>휴대용 단말기용 외장 키패드 특허출원(2014)</li>
+        <li>교내 캡스톤 디자인 경진대회 2회 수상(우수상, 장려상)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>자격증</h2>
+    <ul class="cert-list">
+      <li><span class="cert-name">정보처리기사</span><span class="cert-meta">한국산업인력공단 · 2016년 7월</span></li>
+      <li><span class="cert-name">의공기사</span><span class="cert-meta">한국산업인력공단 · 2014년 12월</span></li>
+      <li><span class="cert-name">AutoCAD 1급</span><span class="cert-meta">한국ATC센터 · 2013년 9월</span></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>기술</h2>
+    <div class="skills-grid">
+      <p class="skill-cat"><strong>Web3</strong><span>Web3.js, Ethers.js, Viem, Solidity, ICON SDK JS, Polkadot.js, Near SDK JS, BandChain.js</span></p>
+      <p class="skill-cat"><strong>Backend</strong><span>NestJS, Node.js, Golang, Rust, Python, Java, MySQL</span></p>
+      <p class="skill-cat"><strong>Frontend</strong><span>Next.js, React, TypeScript</span></p>
+      <p class="skill-cat"><strong>Infra</strong><span>AWS, Docker, CI/CD</span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>기타</h2>
+    <div class="etc-item">
+      <p class="etc-period">2015.12 - 2017.03 / 코딩클럽 운영</p>
+      <p class="etc-desc">청소년을 대상으로한 소프트웨어 교육 활동</p>
+      <ul class="etc-bullets">
+        <li>App-Inventor 수업진행 및 교재개발, 거꾸로 코딩교실, 아두이노 워크샵, 청년샘 모집</li>
+      </ul>
+    </div>
+    <div class="etc-item">
+      <p class="etc-period">책 출판</p>
+      <p class="etc-desc">일반인들을 대상으로 crypto 배경지식과 서비스 사용법을 소개하는 책 출판</p>
+    </div>
+  </section>
+</body>
+</html>

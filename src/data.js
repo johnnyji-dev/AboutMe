@@ -216,20 +216,20 @@ export const DATA = {
             tag: "JavaScript",
             tags: ["Web"],
           },
-          {
-            name: "sCtemplate",
-            desc: "스마트 컨트랙트·블록체인 관련 템플릿 (HTML)",
-            href: "https://sctemplate.vercel.app/",
-            tag: "HTML",
-            tags: ["Web"],
-          },
-          {
-            name: "crypto-wiki",
-            desc: "암호·블록체인 위키/문서",
-            href: "https://crypto-wiki-zeta.vercel.app/",
-            tag: "Wiki",
-            tags: ["Web"],
-          },
+          // {
+          //   name: "sCtemplate",
+          //   desc: "스마트 컨트랙트·블록체인 관련 템플릿 (HTML)",
+          //   href: "https://sctemplate.vercel.app/",
+          //   tag: "HTML",
+          //   tags: ["Web"],
+          // },
+          // {
+          //   name: "crypto-wiki",
+          //   desc: "암호·블록체인 위키/문서",
+          //   href: "https://crypto-wiki-zeta.vercel.app/",
+          //   tag: "Wiki",
+          //   tags: ["Web"],
+          // },
         ],
         hackathon: [
           {
@@ -555,20 +555,20 @@ export const DATA = {
             tag: "JavaScript",
             tags: ["Web"],
           },
-          {
-            name: "sCtemplate",
-            desc: "Smart contract / blockchain template (HTML)",
-            href: "https://sctemplate.vercel.app/",
-            tag: "HTML",
-            tags: ["Web"],
-          },
-          {
-            name: "crypto-wiki",
-            desc: "Crypto & blockchain wiki/docs",
-            href: "https://crypto-wiki-zeta.vercel.app/",
-            tag: "Wiki",
-            tags: ["Web"],
-          },
+          // {
+          //   name: "sCtemplate",
+          //   desc: "Smart contract / blockchain template (HTML)",
+          //   href: "https://sctemplate.vercel.app/",
+          //   tag: "HTML",
+          //   tags: ["Web"],
+          // },
+          // {
+          //   name: "crypto-wiki",
+          //   desc: "Crypto & blockchain wiki/docs",
+          //   href: "https://crypto-wiki-zeta.vercel.app/",
+          //   tag: "Wiki",
+          //   tags: ["Web"],
+          // },
         ],
         hackathon: [
           {
@@ -619,7 +619,7 @@ export const DATA = {
         { title: "web3", items: ["Web3.js", "Ethers.js", "Viem", "Solidity", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
         { title: "backend", items: ["NestJS", "Node.js", "Golang", "Rust", "Python", "Java", "MySQL"] },
         { title: "frontend", items: ["Next.js", "React", "TypeScript"] },
-        { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
+        { title: "infra", items: ["AWS", "Docker", "CI/CD"] },
       ],
     },
     education: {
