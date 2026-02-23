@@ -280,7 +280,7 @@ export const DATA = {
         { title: "web3", items: ["Web3.js", "Ethers.js", "Viem", "Solidity", "ICON SDK JS", "Polkadot.js", "Near SDK JS", "BandChain.js"] },
         { title: "backend", items: ["NestJS", "Node.js", "Golang", "Rust", "Python", "Java", "MySQL"] },
         { title: "frontend", items: ["Next.js", "React", "TypeScript"] },
-        { title: "infra", items: ["AWS", "Docker", "Kubernetes", "GCP", "Azure", "CI/CD"] },
+        { title: "infra", items: ["AWS", "Docker", "CI/CD"] },
       ],
     },
     education: {
